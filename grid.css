@@ -1,0 +1,196 @@
+.vn-grid-container{
+    border-left: 1px solid #efefef;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .vn-photo-column{
+    display: block;
+    padding-left: 20px;
+    width: 310px;
+  }
+    
+  .vn-photo{
+    position: relative;
+    border: none;
+    margin: 20px 0 20px 0;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .vn-photo img{
+    border-radius: 10px;
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .vn-photo .vn-info{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.123), rgba(0,0,0,0.600));
+    opacity: 0;
+  }
+  
+  .vn-photo .vn-info:hover{
+    opacity: 1;
+  }
+  
+  .vn-info .vn-top-right{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 51;
+  }
+  
+  .vn-info .vn-bottom-right{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    z-index: 51;
+  }
+  
+  .vn-info .vn-bottom-left{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 51;
+    color: #eee;
+  }
+
+  .vn-bottom-left img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: none;
+  }
+  
+  .vn-info .vn-bottom-left:hover{
+    color: white;
+  }
+  
+  .vn-info a{
+    font-family: open sans;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .vn-info a:hover{
+    color: white;
+  }
+  
+  .vn-photo button{
+    cursor: pointer;
+    color: grey;
+    background-color: #eee;
+    padding: 10px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+  }
+  
+  .vn-photo button:hover{
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .vn-author{
+    display: none;
+    font-family: open sans;
+    padding: 10px 10px;
+  }
+  
+  .vn-author a{
+    font-family: open sans;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .vn-author img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: none;
+  }
+  
+  .vn-like-btns{
+    display: none;
+    float: left;
+    padding: 10px;
+  }
+  
+  .vn-download-btns{
+    display: none;
+    float: right;
+    padding: 10px;
+  }
+  
+
+
+  /* add featue */
+  .vn-info .vn-top-right-btn{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 51;
+  }
+
+  .vn-info .vn-top-left-locations{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 51;
+    color: #eee;
+  }
+
+  .vn-info .vn-locations-text{
+    cursor: pointer;
+    font-family: open sans;
+    font-size: 12px;
+    color: #fff;
+  }
+
+
+
+    
+@media only screen and (max-width: 950px){
+  .vn-grid-container{
+    border: none;
+  }
+
+  .vn-photo-column{
+    padding: 0 10px 0 10px;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .vn-grid-container{
+    border: none;
+  }
+
+  .vn-photo-column{x;
+    width: 380px;
+  }
+
+}
