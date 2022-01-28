@@ -1,0 +1,312 @@
+*{
+    margin: 0 auto;
+    box-sizing: inherit;
+}
+
+.vn-container{
+    max-width: 1200px;
+    padding: 0 20px 0 20px;
+}
+
+
+.no-text-decoration{
+    font-family: montserrat;
+    color: #343434;
+    text-decoration: none;
+}
+
+
+/*---header---*/
+
+#vn-main-header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    height: 60px;
+    border-bottom: 1px solid #efefef;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.vn-main-header-container{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+    .vn-main-header-left{
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        width: 200px;
+    }
+
+        .vn-main-header-logo{
+            float: left;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .vn-main-header-logo-link{
+            font-family: open sans;
+            color: #343434;
+            font-size: 20px;
+            font-weight: 550;
+            text-decoration: none;
+        }
+
+    .vn-main-header-center{
+        flex-basis: auto;
+        flex-grow: 1;
+        width: 1000px;
+        max-width: 1000px;
+    }
+    
+        .vn-main-search-container{
+            float: right;
+            width: 100%;
+            height: 100%;
+            
+        }
+    
+            .vn-main-search{
+                float: right;
+                display: block;
+                position: relative;
+                height: 100%;
+                top: 10px;
+            }
+            
+            .vn-main-search input[type="search"]{
+                width: 900px;
+                border: none;
+                height: 40px;
+                padding: 0 20px 0 20px;
+                font-family: montserrat;
+                font-size: 13px;
+                color: #343434;
+                border-radius: 20px;
+                background: #f4f4f4;
+                text-decoration: none;             
+            }
+    
+            .vn-main-search button{
+                position: absolute;
+                right: 15px;
+                top: 0 ;
+                height: 40px;
+            }    
+             
+            .vn-main-search-button{
+                cursor: pointer;
+                color: #343434;
+                border: none;
+                background: none;
+                outline: none;
+            }
+            
+    .vn-main-header-right{
+        justify-content: flex-end;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+        .vn-main-header-right-button{
+            width: auto;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+    
+        .vn-main-header-triple-dot-button{
+            float: right;
+            padding-top: 10px;
+            border: none;
+            height: 40px;
+            background: none;
+            color: #343434;
+            cursor: pointer;
+        }
+
+
+
+/* sections */
+
+.vn-section{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 60px 0 60px 0;
+}
+
+    .vn-section-box{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+        .vn-section-left{
+            display: block;
+            flex-grow: 0;
+            width: 200px;
+            height: 500px;
+        }
+
+            .vn-section-left-box{
+                display: block;
+            }
+
+                .vn-section-left-tittle{
+                    font-family: open sans;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #343434;
+                }
+
+                .vn-discover{
+                    display: block;
+                }
+
+                    .vn-discover-tittle{
+                        display: block;
+                        margin-top: 15px;
+                    }
+
+                    .vn-discover-item-box{
+                        display: block;
+                        margin-top: 15px;
+                        line-height: 30px;
+                    }
+
+                        .vn-discover-item{
+                            border: 1px solid #565656;
+                            border-radius: 3px;
+                            padding: 4px 9px 4px 9px;
+                            cursor: pointer;
+                        }
+
+                        .vn-discover-item-box a{
+                            font-family: open sans;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #343434;
+                        }
+
+                            .nature{   
+                                border: 1px solid #1ca700; 
+                            }
+
+                            .city{  
+                                border: 1px solid #4605fa;
+                            }
+
+                            .sea{    
+                                border: 1px solid #008cff;
+                            }
+
+                            .building{  
+                                border: 1px solid #ff9900;
+                            }
+
+                            .other{
+                                border: 1px solid #ff00ea;
+                            }
+
+                            .country{    
+                                border: 1px solid #9e0cff;
+                            }
+                            
+
+                .vn-discover-login{
+                    display: block;
+                }
+
+                    .vn-discover-login-box{
+                        display: block;
+                        margin-top: 15px;
+                    }
+
+                    .vn-discover-login-button-box{
+                        display: block;
+                        margin-top: 15px;
+                    }
+        
+                        .vn-discover-login-button{
+                            padding: 4px 25px 4px 25px;
+                            border: 1px solid rgb(132, 25, 255);
+                            border-radius: 3px;
+                            font-family: open sans;
+                            font-size: 12px;
+                            color: rgb(132, 25, 255);
+                            background: none;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+        
+                            .sign-in{
+                                border: 1px solid rgb(132, 25, 255);
+                                background: rgb(132, 25, 255);
+                                color: #fff;
+                            }
+
+                .vn-about-us{
+                    display: block;
+                }
+
+                    .vn-about-us-tittle{
+                        display: block;
+                        margin-top: 15px;
+                    }
+
+                    .vn-about-us-item-box{
+                        display: block;
+                        margin-top: 5px;
+                    }
+
+                        .vn-about-us-item{
+                            margin-top: 3px;
+                            display: inline-block;
+                            border: 1px solid #343434;
+                            border-radius: 3px;
+                            padding: 4px 9px 4px 9px;
+                            cursor: pointer;
+                        }
+                            
+                            .vn-about-us-item a{
+                                font-family: open sans;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: #343434;
+                                text-decoration: none;
+                            }
+
+
+                .vn-copyright-box{
+                    display: block;
+                    margin-top: 15px;
+                }
+
+                    .vn-copyright{
+                        font-family: open sans;
+                        color: #343434;
+                        font-size: 11px;
+                        text-decoration: none;
+                    }
+                
+
+        .vn-section-right{
+            display: block;
+            flex-grow: 1;
+            width: 1000px;
+            height: auto;
+        }
+
+    

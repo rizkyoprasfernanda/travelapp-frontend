@@ -1,0 +1,266 @@
+*{
+    margin: 0 auto;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vn-container{
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+    .vn-container-box{
+        padding-top: 50px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+        .vn-container-left{
+            display: block;
+            left: 0;
+            max-width: 60px;
+            width: 60px;
+            height: auto;
+            flex-grow: 0;
+        }
+
+            .vn-logo-box{
+                display: block;
+                width: 100%;
+            }
+
+                .vn-logo{
+                    display: block;
+                    align-content: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                    .vn-logo-link{ 
+                        font-family: open sans;
+                        color: #343434;
+                        font-size: 20px;
+                        font-weight: 550;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+            .vn-profile-box{
+                display: block;
+                width: 100%;
+                margin-top: 50px;
+            }
+
+                .vn-profile{
+                    display: block;
+                }
+
+                    .vn-profile-image{
+                        display: block;
+                        align-content: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                        .vn-profile-image img{
+                            max-width: 50px;
+                            width: 50px;
+                            height: 50px;
+                            background: #efefef;
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+
+            .vn-menu-box{
+                display: block;
+                width: 100%;
+            }
+
+                .vn-menu{
+                    display: block;
+                }
+
+                    .vn-menu-item{
+                        height: 50px;
+                        line-height: 50px;
+                        align-content: center;
+                        justify-content: center;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                        .vn-menu-item-style{
+                            font-size: 22px;
+                            color: #4043ee;
+                        }
+
+                    .vn-menu-item:hover{
+                        border-radius: 5px;
+                        background: #e5e5ff;
+                    }
+
+            .vn-logout-box{
+                display: block;
+                width: 100%;
+                margin-top: 180px;
+            }
+
+                .vn-logout{
+                    display: block;
+                }
+
+                    .vn-logout-item{
+                        height: 50px;
+                        line-height: 50px;
+                        align-content: center;
+                        justify-content: center;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                    .vn-logout-item:hover{
+                        border-radius: 5px;
+                        background: #e5e5ff;
+                    }
+
+
+
+
+        .vn-container-right{
+            display: block;
+            width: auto;
+            height: auto;
+            flex-grow: 1;
+        }
+
+            .vn-main-search-box{
+                display: block;
+                width: 100%;
+                
+            }
+        
+                .vn-main-search{
+                    float: right;
+                    display: block;
+                    position: relative;
+                }
+                
+                .vn-main-search input[type="search"]{
+                    width: 1120px;
+                    border: none;
+                    height: 40px;
+                    padding: 0 20px 0 20px;
+                    font-family: montserrat;
+                    font-size: 13px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;             
+                }
+        
+                .vn-main-search button{
+                    position: absolute;
+                    right: 15px;
+                    top: 0 ;
+                    height: 40px;
+                }    
+                
+                .vn-main-search-button{
+                    cursor: pointer;
+                    color: #343434;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+
+            .vn-discover-box{
+                display: block;
+                padding: 20px 0 0 20px ;
+            }
+
+                .vn-discover-text-box{
+                    margin-top: 30px;
+                    display: block;
+                }
+
+                    .vn-discover-tittle{
+                        font-family: open sans;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #4043ee;
+                    }
+
+                    .vn-discover-text-word{
+                        font-family: open sans;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #818181;
+                    }
+
+                .vn-discover-item-box{
+                    margin-top: 10px;
+                    display: block;
+                }
+
+                    .vn-discover-item{
+                        display: inline-block;
+                        padding: 5px 10px 5px 10px;
+                        margin-right: 2px;
+                        border-radius: 3px;
+                        background: #d5d5ff;
+                        cursor: pointer;
+                    }
+
+                        .green{
+                            background: #e0fffa;
+                        }
+
+                        .blue{
+                            background: #e0e8ff;
+                        }
+
+                        .purple{
+                            background: #ebe2ff;
+                        }
+
+                        .pink{
+                            background: #ffd5ff;
+                        }
+
+                        .red{
+                            background: #fedfff;
+                        }
+
+                        .orange{
+                            background: #ffeedf;
+                        }
+
+                        .yellow{
+                            background: #ffffe4;
+                        }
+
+
+                    .vn-discover-item-text{    
+                        font-family: open sans;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #6b6b6b;
+                        text-decoration: none;
+                    }
+
+            .vn-grid-box{
+                display: block;
+            }
+
+                .vn-grid{
+                    display: block;
+                }
+
+

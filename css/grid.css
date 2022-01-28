@@ -1,5 +1,5 @@
 .vn-grid-container{
-    border-left: 1px solid #efefef;
+    max-width: 1280px;
     height: auto;
     width: auto;
     display: flex;
@@ -8,8 +8,8 @@
   
   .vn-photo-column{
     display: block;
-    padding-left: 20px;
-    width: 310px;
+    margin-left: 20px;
+    width: 300px;
   }
     
   .vn-photo{
@@ -189,7 +189,7 @@
     border: none;
   }
 
-  .vn-photo-column{x;
+  .vn-photo-column{
     width: 380px;
   }
 

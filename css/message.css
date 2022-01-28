@@ -1,0 +1,583 @@
+.vn-message{
+    display: block;
+}
+
+    .vn-message-container{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        max-width: 400px;
+        height: 100vh;
+        overflow-x: scroll;
+        background: #fff;
+    }
+
+        .vn-message-head{
+            display: block;
+            margin: 70px 20px 0 20px;
+        }
+
+            .vn-message-head-container{
+                display: flex;
+                border-bottom: 1px solid #efefef;
+                height: 50px;
+            }
+
+                .vn-message-head-left{
+                    display: block;
+                    flex-grow: 0;
+                    height: 100%;
+                }
+
+                    .vn-message-tittle{
+                        display: block;
+                        height: 100%;
+                        float: left;
+                        line-height: 50px;
+                    }
+
+                        .vn-message-tittle-style{
+                            font-family: open sans;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #383846;
+                        }
+
+                .vn-message-head-right{
+                    display: block;
+                    flex-grow: 1;
+                    height: 100%;
+                }
+
+                    .vn-message-menu{
+                        display: block;
+                    }
+
+                        .vn-message-menu-container{
+                            display: block;
+                            height: 50px;
+                            float: right;
+                        }
+        
+                            .vn-message-menu-item{
+                                display: inline-block;
+                                width: 25px;
+                                height: 25px;
+                                line-height: 50px;
+                                align-content: center;
+                                justify-content: center;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+
+                                .vn-message-menu-item-style{
+                                    font-size: 17px;
+                                    color: #9d9dc7;
+                                }
+
+                                .triple-dot{
+                                    font-size: 15px;
+                                }
+
+        .vn-message-search-message{
+            display: block;
+        }
+
+            .vn-message-search-container{
+                display: block;
+                height: 50px;
+                padding: 0 20px 0 20px;
+                margin: 10px 0 10px 0;
+            }
+        
+                .vn-message-search{
+                    display: block;
+                    position: relative;
+                    line-height: 50px;
+                    float: left;
+                }
+                
+                .vn-message-search input[type="search"]{
+                    width: 360px;
+                    border: none;
+                    height: 40px;
+                    padding: 0 15px 0 15px;
+                    font-family: montserrat;
+                    font-size: 13px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;             
+                }
+        
+                .vn-message-search button{
+                    position: absolute;
+                    right: 10px;
+                    top: 5px ;
+                    height: 40px;
+                }    
+                
+                .vn-message-search-button{
+                    cursor: pointer;
+                    color: #9d9dc7;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+
+        .vn-message-body{
+            display: block;
+            cursor: pointer;
+        }
+
+            .vn-message-body-container{
+                display: flex;
+                padding: 20px 0 20px 0;
+                margin: 0 20px 0 20px;
+                border-bottom: 1px solid #efefef;
+            }
+
+                .vn-message-body-left{
+                    display: block;
+                    flex-grow: 0;
+                    width: 50px;
+                    max-width: 50px;
+                }
+
+                    .vn-message-profile{
+                        display: block;
+                        float: left;
+                    }
+
+                        .vn-message-profile-container{
+                            max-width: 40px;
+                            width: 40px;
+                            height: auto;
+                        }
+
+                            .vn-message-profile-image{
+                                width: 40px;
+                                max-width: 40px;
+                                height: 40px;
+                                max-height: 40px;
+                                border-radius: 20px;
+                            }
+
+                            .vn-message-profile-image img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20px;
+                            }
+
+                .vn-message-body-right{
+                    display: block;
+                    flex-grow: 1;
+                    width: 310px;
+                    max-width: 310px;
+                    padding-left: 10px;
+                }
+
+                    .vn-message-body-content{
+                        display: block;
+                    }
+
+                        .vn-message-body-content-container{
+                            display: block;
+                        }
+
+                            .vn-message-body-content-top{
+                                display: inline-block;
+                                width: 100%;
+                            }
+
+                                .vn-message-profile-name{
+                                    display: block;
+                                    float: left;
+                                }
+
+                                    .vn-message-profile-style{
+                                        font-family: open sans;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: #383846;
+                                        text-align: left;
+                                    }
+
+                                .vn-message-time{
+                                    display: block;
+                                    float: right;
+                                }
+
+                                    .vn-message-time-style{
+                                        font-family: open sans;
+                                        font-size: 11px;
+                                        font-weight: 500;
+                                        color: #aeaecc;
+                                        text-align: right;
+                                    }
+
+                                    .time-unread{  
+                                        font-weight: 600;
+                                        color: #4043ee;
+                                    }
+
+                            .vn-message-body-content-bottom{
+                                display: block;
+                                width: 100%;
+                            }
+
+                                .vn-message-content-fill{
+                                    display: inline-block;
+                                    max-width: 250px;
+                                    max-height: 20px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    float: left;
+                                }
+
+                                    .vn-message-content-style{
+                                        font-family: open sans;
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        color: #89899e;
+                                    }
+
+                                    .content-unread{
+                                        font-weight: 600;
+                                        color: #383846;
+                                    }
+
+                            .vn-message-content-unread-count{
+                                display: inline-block;
+                                width: 50px;
+                                float: right;
+                                text-align: right;
+                            }
+
+                                .vn-message-unread-count{
+                                    padding: 2px 5px 2px 5px;
+                                    font-family: open sans;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    color: #eee;
+                                    background: #4043ee;
+                                    border-radius: 3px;
+                                }
+        
+
+/*-------- open message ----------*/
+
+.vn-message-open{
+    display: block;
+}
+
+    .vn-message-open-container{
+        border: 1px solid blue;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 400px;
+        width: 400px;
+        max-width: 400px;
+        height: 100vh;
+        overflow-x: scroll;
+        background: #fff;
+    }
+
+        .vn-message-open-head{
+            display: block;
+            margin: 70px 20px 0 20px;
+        }
+
+            .vn-message-open-head-container{
+                display: flex;
+                border-bottom: 1px solid #efefef;
+                height: 40px;
+                padding: 10px 0 10px 0;
+            }
+
+                .vn-message-open-head-left{
+                    display: block;
+                    flex-grow: 0;
+                    height: 100%;
+                }
+
+                    .vn-message-open-head-left-container{
+                        display: flex;
+                        max-height: 40px;
+                    }
+
+                        .vn-message-open-profile-image{
+                            display: inline-block;
+                            flex-grow: 0;
+                            cursor: pointer;
+                        }
+
+                            .vn-message-open-profile-image-container{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 20px;
+                            }
+
+                            .vn-message-open-profile-image-container img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20px;
+                            }
+
+                        .vn-message-open-profile-name{
+                            display: inline-block;
+                            flex-grow: 1;
+                            padding-left: 10px;
+                            cursor: pointer;
+                            line-height: 40px;
+                        }
+
+                            .vn-message-open-profile-name-style{
+                                font-family: open sans;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #383846;
+                                text-align: left;
+                            }
+
+                        
+
+                .vn-message-open-head-right{
+                    display: block;
+                    flex-grow: 1;
+                    height: 100%;
+                }
+
+                    .vn-message-open-head-right-container{
+                        display: block;
+                    }
+
+                        .vn-message-open-head-button{
+                            display: block;
+                            float: right;
+                            line-height: 40px;
+                        }
+
+                            .vn-message-open-head-back-button{
+                                font-size: 20px;
+                                font-weight: 400;
+                                border: none;
+                                background: none;
+                                color: #4043ee;
+                                cursor: pointer;
+                            }
+
+        
+        
+        .vn-message-open-conversation{
+            display: block;
+            margin: 0 20px 0 20px;
+            position: absolute;
+            bottom: 60px;
+        }
+
+            .vn-message-open-conversation-container{
+                display: block;
+                height: 100%;
+                width: 100%;
+                padding: 10px 0 10px 0;
+            }
+
+                .vn-message-open-conversation-day{
+                    display: block;
+                    width: 100%;
+                    width: 100%;
+                }
+
+                    .vn-message-open-conversation-day-container{
+                        width: 360px;
+                        max-width: 360px;
+                    }
+
+                        .vn-message-conversation-day{
+                            display: block;
+                            text-align: center;
+                        }
+
+                            .vn-message-conversation-day-style{
+                                font-family: open sans;
+                                font-size: 10px;
+                                font-weight: 500;
+                                background: #e7e7ff;
+                                color: #4043ee;
+                                padding: 3px 5px;
+                            }
+
+                .vn-reply-chat{
+                    display: block;
+                }
+
+                    .vn-reply-chat-container{
+                        border: 1px solid red;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        margin: 10px 0;
+                    }
+
+                        .vn-reply-conversation{
+                            display: block;
+                            margin: 5px 0;
+                        }
+
+                            .vn-reply-conversation-container{
+                                border: 1px solid red;
+                                display: flex;
+                                width: 360px;
+                                margin: 5px 0;
+                            }
+
+                            .vn-reply-conversation-background{
+                                border: 1px solid red;
+                                display: block;
+                                align-content: flex-end;
+                                justify-content: flex-end;
+                                width: fit-content;
+                                max-width: 250px;
+                                background: #dfdfff;
+                                padding: 10px;
+                                border-radius: 3px;
+                            }
+
+                            .vn-reply-conversation-style{
+                                text-align: left;
+                                font-family: open sans;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: #3d3fbe;
+                                padding: 3px 5px;
+                            }
+
+
+                .vn-username-chat{
+                    display: block;
+                }
+
+                    .vn-username-container{
+                        height: auto;
+                        padding: 10px 0;
+                    }
+
+                        .vn-username-conversation{
+                            display: block;
+                            text-align: left;
+                            margin: 8px 0;
+                        }
+
+                            .vn-username-conversation-style{
+                                font-family: open sans;
+                                border-radius: 3px;
+                                font-size: 12px;
+                                font-weight: 500;
+                                background: #ececec;
+                                color: #343434;
+                                padding: 3px 5px;
+                            }
+
+
+        .vn-message-open-bottom{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            margin: 0 20px 0 20px;
+        }
+
+            .vn-message-open-bottom-container{
+                display: flex;
+                height: 40px;
+                padding: 10px 0 10px 0;
+            }
+
+                .vn-message-open-bottom-left{
+                    display: block;
+                    flex-grow: 0;
+                    width: 50px;
+                    max-width: 50px;
+                    height: 100%;
+                }
+
+                    .vn-message-open-bottom-left-container{
+                        display: block;
+                        width: 40px;
+                        height: 100%;
+                    }
+
+                        .vn-message-open-add-file{
+                            display: block;
+                            float: left;
+                            text-align: left;
+                        }
+
+                            .vn-message-open-add-file-button{
+                                width: 40px;
+                                height: 40px;
+                                font-size: 16px;
+                                border: none;
+                                border-radius: 5px;
+                                background: #dfdfff;
+                                color: #4043ee;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+
+                .vn-message-open-bottom-right{
+                    display: block;
+                    flex-grow: 1;
+                    width: 310px;
+                    max-width: 310px;
+                    height: 100%;
+                }
+
+                    .vn-message-textbox{
+                        display: block;
+                    }
+
+                        .vn-message-textbox-container{
+                            float: right;
+                            display: block;
+                            position: relative;
+                            max-width: 310px;
+                            line-height: 40px;
+                            
+                        }
+                    
+                            
+                            .vn-message-textbox-container input[type="text"]{
+                                width: 280px;
+                                border: none;
+                                height: 40px;
+                                padding: 0 15px 0 15px;
+                                font-family: open sans;
+                                font-size: 13px;
+                                color: #343434;
+                                border-radius: 5px;
+                                background: #f4f4f4;
+                                text-decoration: none;             
+                            }
+                    
+                            .vn-message-textbox-container button{
+                                position: absolute;
+                                right: 10px;
+                                top: 0 ;
+                                height: 40px;
+                            }    
+                            
+                            .vn-message-textbox-emoticon-button{
+                                font-size: 16px;
+                                cursor: pointer;
+                                color: #8a8aaf;
+                                border: none;
+                                background: none;
+                                outline: none;
+                            }
+
+
+                

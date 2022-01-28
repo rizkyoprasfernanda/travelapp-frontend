@@ -1,0 +1,172 @@
+.vn-grid-container{
+    display: block;
+}
+
+.vn-grid{
+    display: flex;
+}
+
+    .vn-grid-column{
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+
+        .vn-photo{
+            display: block;
+        }
+
+            .vn-photo-container{
+                display: block;
+            }
+
+                .vn-photo-image{
+                    width: 300px;
+                    height: auto;
+                    position: relative;
+                }
+
+                .vn-photo-image img{
+                    border-radius: 10px;
+                    width: 100%;
+                    vertical-align: top;
+                }
+
+                
+                .vn-info{
+                    position: absolute;
+                    width: 100%; 
+                    height:100%;
+                    top:0; 
+                    left:0;
+                    border-radius: 10px;
+                    background:rgba(0, 0, 0, 0.377);
+                    opacity: 1;
+                    transition: all 1s;
+                    -webkit-transition: all 1s;
+                }
+
+                    .vn-info-top-left{
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        z-index: 51;
+                    }
+
+                        .vn-info-top-left-container{
+                            height: 20px;
+                            display: block;
+                        }
+
+                            .vn-info-location{
+                                font-family: open sans;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: #eee;
+                                cursor: pointer;
+                            }
+
+                    .vn-info-top-right{
+                        position: absolute;
+                        top: 15px;
+                        right: 10px;
+                        z-index: 51;
+                    }
+
+                        .vn-info-top-right-container{
+                            display: block;
+                            height: 20px;
+                        }
+
+                            .vn-info-3dot-button{
+                                height: 20px;
+                                font-family: open sans;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: #eee;
+                                border: none;
+                                background: none;
+                                cursor: pointer;
+                            }
+
+                    .vn-info-bottom-left{
+                        position: absolute;
+                        bottom: 20px;
+                        left: 10px;
+                        z-index: 51;
+                    }
+
+                        .vn-info-bottom-left-container{
+                            display: flex;
+                            max-height: 30px;
+                        }
+
+                            .vn-info-author-img{
+                                display: block;
+                                flex-grow: 0;
+                                width: 30px;
+                                max-width: 30px;
+                                height: 30px;
+                                max-height: 30px;
+                                border-radius: 15px;
+                            }
+
+                                .vn-info-author-img img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 15px;
+                                    cursor: pointer;
+                                }
+
+                            .vn-info-author-name{
+                                display: block;
+                                flex-grow: 1;
+                                height: 30px;
+                                line-height: 30px;
+                                padding-left: 5px;
+                            }
+
+                                .vn-info-author-name-text{
+                                    font-family: open sans;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: #eee;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                }
+
+                    .vn-info-bottom-right{
+                        position: absolute;
+                        bottom: 20px;
+                        right: 10px;
+                        z-index: 51;
+                    }
+
+                        .vn-info-bottom-right-container{
+                            display: block;
+                        }
+
+                            .vn-react-button{
+                                display: block;
+                            }
+
+                                .vn-react-item{
+                                    display: inline-block;
+                                    width: 30px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    align-content: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+
+                                    .vn-react-item-style{
+                                        font-size: 22px;
+                                        color: #eee;
+                                    }
+
+                                        .vn-react-item .vn-react-item-style:hover{
+                                            color: #4043ee;
+                                        }
+
