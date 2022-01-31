@@ -13,6 +13,7 @@
     }
 
         .vn-photo{
+            margin: 10px 0;
             display: block;
         }
 
@@ -21,7 +22,7 @@
             }
 
                 .vn-photo-image{
-                    width: 300px;
+                    width: 285px;
                     height: auto;
                     position: relative;
                 }
@@ -40,7 +41,7 @@
                     top:0; 
                     left:0;
                     border-radius: 10px;
-                    background:rgba(0, 0, 0, 0.377);
+                    background: linear-gradient(180deg, rgba(0,0,0,0.24701218377976186) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.24701218377976186) 100%);
                     opacity: 1;
                     transition: all 1s;
                     -webkit-transition: all 1s;
@@ -62,7 +63,7 @@
                                 font-family: open sans;
                                 font-size: 12px;
                                 font-weight: 500;
-                                color: #eee;
+                                color: #fff;
                                 cursor: pointer;
                             }
 
@@ -83,11 +84,49 @@
                                 font-family: open sans;
                                 font-size: 12px;
                                 font-weight: 500;
-                                color: #eee;
+                                color: #fff;
                                 border: none;
                                 background: none;
                                 cursor: pointer;
                             }
+
+                                .vn-info-3dot-button-content{
+                                    display: block;
+                                    position: absolute;
+                                    background: #fff;
+                                    padding: 15px 0;
+                                    margin-top: 10px;
+                                    border-radius: 5px;
+                                    right: 0;
+                                }
+
+                                .vn-info-3dot-button-content.active{
+                                    display: none;
+                                }
+
+                                    .vn-info-3dot-button-content-container{
+                                        width: 150px;
+                                        height: auto;
+                                        text-align: center;
+                                    }
+
+                                        .vn-info-3dot-button-content-style{
+                                            display: block;
+                                            width: 100%;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            line-height: 25px;
+                                            color: #56576d;
+                                            border: none;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                        }
+
+                                        .vn-info-3dot-button-content-style:hover{
+                                            background: #eeefff;
+                                            color: #56576d;
+                                        }
 
                     .vn-info-bottom-left{
                         position: absolute;
@@ -162,11 +201,22 @@
                                 }
 
                                     .vn-react-item-style{
-                                        font-size: 22px;
-                                        color: #eee;
+                                        color: transparent;
+                                        -webkit-text-stroke-width: 2px;
+                                        -webkit-text-stroke-color: white;
+                                        font-size: 20px;
                                     }
 
-                                        .vn-react-item .vn-react-item-style:hover{
-                                            color: #4043ee;
-                                        }
+                                    .love-color {
+                                        color: #fd3560;
+                                        -webkit-text-stroke-width: 2px;
+                                        -webkit-text-stroke-color: #fd3560;
+                                      }
 
+                                    .bookmark-color {
+                                        color: #6466ff;
+                                        -webkit-text-stroke-width: 2px;
+                                        -webkit-text-stroke-color: #6466ff;
+                                    } 
+                                      
+                                     

@@ -1,0 +1,703 @@
+*{
+    margin: 0 auto;
+}
+
+.vn-header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf ;
+    z-index: 9999;
+}
+
+    .vn-header-container{
+        display: flex;
+        width: 1200px;
+        max-width: 1200px;
+        height: 70px;
+        max-height: 70px;
+    }
+
+        .vn-header-left{
+            display: block;
+            flex-grow: 0;
+            width: 200px;
+            height: 100%;
+        }
+
+            .vn-logo-container{
+                display: block;
+            }
+
+                .vn-logo{
+                    display: block;
+                    line-height: 70px
+                }
+
+                    .vn-logo-link{
+                        font-family: open sans;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #5f5f79;
+                        text-decoration: none;
+                    }
+
+        .vn-header-center{
+            display: block;
+            flex-grow: 0;
+            width: 700px;
+            height: 100%;
+            float: right;
+        }
+
+            .vn-main-search-container{
+                display: block;
+                
+            }
+        
+                .vn-main-search{
+                    float: right;
+                    display: block;
+                    position: relative;
+                    line-height: 70px;
+                }
+                
+                .vn-main-search input[type="search"]{
+                    width: 300px;
+                    border: none;
+                    height: 40px;
+                    padding: 0 15px 0 15px;
+                    font-family: montserrat;
+                    font-size: 13px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;             
+                }
+        
+                .vn-main-search button{
+                    position: absolute;
+                    right: 10px;
+                    top: 15px ;
+                    height: 40px;
+                }    
+                
+                .vn-main-search-button{
+                    cursor: pointer;
+                    color: #9d9dc7;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+
+        .vn-header-right{
+            display: block;
+            flex-grow: 0;
+            width: auto;
+            height: 100%;
+        }
+
+            .vn-header-right-container{
+                display: flex;
+                float: right;
+            }
+
+                .vn-menu-container{
+                    display: block;
+                    flex-grow: 0;
+                    height: 100%;
+                    max-height: 70px;
+                    padding-left: 20px;
+                }
+
+                    .vn-menu{
+                        display: block;
+                    }
+
+                        .vn-menu-item{
+                            display: inline-block;
+                            width: 40px;
+                            height: 70px;
+                            line-height: 70px;
+                            align-content: center;
+                            justify-content: center;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                            .vn-menu-item-style{
+                                font-size: 22px;
+                                color: #9d9dc7;
+                            }
+
+                                .vn-menu-item .vn-menu-item-style:hover{
+                                    color: #4043ee;
+                                }
+
+
+                .vn-upload-container{
+                    display: block;
+                    flex-grow: 2;
+                    width: auto;
+                    max-width: 70px;
+                    height: 100%;
+                    max-height: 70px;
+                    padding-left: 20px;
+                }
+
+                    .vn-upload{
+                        display: block;
+                        line-height: 70px;
+                    }
+
+                        .vn-upload-button{
+                            padding: 8px 12px 8px 12px;
+                            border-radius: 5px;
+                            font-family: open sans;
+                            font-size: 13px;
+                            font-weight: 600;
+                            border: 1px solid #4548ff;
+                            background: #4548ff;
+                            color: #fff;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+
+                        .vn-upload-button:hover{
+                            border: 1px solid #4548ff;
+                            background: #fff;
+                            color: #4548ff;
+                        }
+
+                
+                .vn-profile-container{
+                    display: block;
+                    flex-grow: 1;
+                    width: auto;
+                    height: 70px;
+                    max-height: 70px;
+                    padding-left: 20px;
+                }
+
+                    .vn-profile{
+                        display: block;
+                        line-height: 70px;
+                        padding: 15px 0 15px 0;
+                    }
+
+                        .vn-profile-image{
+                            display: block;
+                            align-content: center;
+                            justify-content: center;
+                            text-align: center;
+                            max-width: 40px;
+                            width: 40px;
+                        }
+
+                            .vn-profile-image img{
+                                border: 1px solid #9d9dc7;
+                                max-width: 40px;
+                                width: 40px;
+                                height: 40px;
+                                background: #efefef;
+                                border-radius: 25px;
+                                cursor: pointer;
+                            }
+
+
+/*---- Section ------*/
+.vn-profile-page{
+    display: block;
+    padding-top: 70px;
+}
+
+    .vn-profile-page-container{
+        max-width: 1200px;
+    }
+
+        .vn-profile-page-top{
+            display: block;
+        }
+
+            .vn-profile-page-top-container{
+                width: 100%;
+            }
+
+                .vn-image-background{
+                    display: block;
+                    padding: 20px 0;      
+                }
+            
+                    .vn-image-background img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .vn-profile-page-top-profile{
+                        display: block;
+                        padding-bottom: 30px;
+                    }
+            
+                        .vn-profile-page-top-profile-container{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            width: 100%;
+                            height: auto;
+                        }
+            
+                            .vn-profile-page-top-left{
+                                flex-grow: 0;
+                            }
+            
+                                .vn-profile-page-top-left-container{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    max-width: 600px;
+                                    float: left;
+                                }
+            
+                                    .vn-profile-page-profile-image{
+                                        flex-grow: 0;
+                                    }
+            
+                                        .vn-profile-page-profile-image-container{
+                                            width: 120px;
+                                            height: 100px;
+                                        }
+            
+                                            .vn-profile-page-profile-image-container img{
+                                                border-radius: 60px;
+                                                width: 120px;
+                                                height: 120px;
+                                            }
+            
+                                    .vn-profile-page-name-location-description{
+                                        flex-grow: 1;
+                                    }
+            
+                                        .vn-profile-page-name-location-description-container{
+                                            width: 450px;
+                                            height: auto;
+                                            padding-left: 20px;
+                                        }
+            
+                                            .vn-profile-page-name{
+                                                display: block;
+                                                margin-bottom: 2px;
+                                            }
+            
+                                                .vn-profile-page-name-container{
+                                                    width: 430px;
+                                                    max-width: 430px;
+                                                }
+            
+                                                    .vn-profile-page-name-style{
+                                                        font-family: open sans;
+                                                        font-size: 25px;
+                                                        font-weight: 700;
+                                                        color: #343434;
+                                                    }
+            
+                                            .vn-profile-page-location{
+                                                display: block;
+                                                margin-bottom: 10px;
+                                            }
+            
+                                                .vn-profile-page-location-container{
+                                                    width: 430px;
+                                                    max-width: 430px;
+                                                }
+            
+                                                    .vn-profile-page-location-style{
+                                                        font-family: open sans;
+                                                        font-size: 15px;
+                                                        font-weight: 600;
+                                                        color: #565656;
+                                                    }
+            
+                                            .vn-profile-page-visited{
+                                                display: block;
+                                                float: left;
+                                            }
+            
+                                                .vn-profile-page-visited-container{
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    width: 430px;
+                                                    max-width: 430px;
+                                                    float: left;
+                                                    justify-content: flex-start;
+                                                    align-items: flex-start;
+                                                }
+            
+                                                    .vn-profile-page-visited-user{
+                                                        display: inline-block;
+                                                        
+                                                    }
+            
+                                                        .vn-profile-page-visited-user-container{
+                                                            width: 40px;
+                                                            max-width: 40px;
+                                                            height: 40px;
+                                                            max-height: 40px;
+                                                            margin-left: 5px;
+                                                        }
+            
+                                                            .vn-profile-page-visited-icon{
+                                                                text-align: center;
+                                                                align-items: center;
+                                                                font-size: 18px;
+                                                                line-height: 40px;
+                                                                width: 40px;
+                                                                height: 40px;
+                                                                border-radius: 20px;
+                                                                background: none;
+                                                                color: #eee;
+                                                                cursor: pointer;
+                                                            }
+            
+                                                                .country-icon{
+                                                                    background: #6e7cff;
+                                                                }
+            
+                                                                .city-icon{
+                                                                    background: #6e7cff;
+                                                                }
+            
+                                                                .place-icon{
+                                                                    background: #6e7cff;
+                                                                }
+            
+                                                    .vn-profile-page-visited-wraping{
+                                                        width: 280px;
+                                                        height: 40px;
+                                                    }
+            
+            
+                            .vn-profile-page-top-right{
+                                flex-grow: 1;
+                            }
+            
+                                .vn-profile-page-top-right-container{ 
+                                    max-width: 50%;
+                                    float: right;
+                                }
+
+                                .vn-profile-page-top-right-button{
+                                    display: block;
+                                }
+        
+                                    .vn-profile-page-top-right-button-container{
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        max-width: 600px;
+                                        height: auto;
+                                        float: right;
+                                    }
+        
+                                        .vn-profile-page-top-main-button{
+                                            display: inline-block;
+                                        }
+        
+                                            .vn-profile-page-top-main-button-container{
+                                               margin-left: 8px;
+                                            }
+        
+                                                
+                                                .vn-profile-follow-button{
+                                                    padding: 8px 12px 8px 12px;
+                                                    border-radius: 5px;
+                                                    font-family: open sans;
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    border: none;
+                                                    background: #4548ff;
+                                                    color: #fff;
+                                                    text-decoration: none;
+                                                    cursor: pointer;
+                                                }
+
+                                                    .vn-profile-follow-button:hover{
+                                                        background: #e4e5ff;
+                                                        color: #4548ff;
+                                                    }
+
+                                                    .follow-icon{
+                                                        text-align: center;
+                                                        margin-right: 5px;
+                                                        font-size: 15px;
+                                                    }
+        
+                                                    .vn-profile-hi-button{
+                                                        width: 40px;
+                                                        height: 40px;
+                                                        line-height: 30px;
+                                                        border-radius: 5px;
+                                                        font-size: 20px;
+                                                        background: #efefef;
+                                                        color: #636388;
+                                                        border: none;
+                                                        text-decoration: none;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .vn-profile-hi-button:hover{
+                                                        background: #e4e5ff;
+                                                        color: #4548ff;
+                                                    }
+
+                                                    .vn-profile-triple-dot-button{
+                                                        width: 40px;
+                                                        height: 40px;
+                                                        line-height: 30px;
+                                                        border-radius: 5px;
+                                                        font-size: 16px;
+                                                        background: #efefef;
+                                                        color: #636388;
+                                                        border: none;
+                                                        text-decoration: none;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    .vn-profile-triple-dot-button:hover{
+                                                        background: #e4e5ff;
+                                                        color: #4548ff;
+                                                    }    
+        
+                                                       
+.vn-profile-page-bottom{
+    display: block;
+}
+
+    .vn-profile-page-bottom-container{
+        max-width: 1200px;
+    }
+
+        .vn-profile-page-bottom-menu-page{
+            display: block;
+        }
+
+            .vn-profile-page-bottom-menu-page-container{
+                width: 100%;
+                border-bottom: 1px solid #dfdfdf ;
+            }
+
+                .vn-profile-page-menu{
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+
+                    .vn-profile-page-menu-container{
+                        height: 40px;
+                        padding: 0 10px;
+                        line-height: 40px;
+                    }
+
+                        .vn-profile-page-menu-button{
+                            border-radius: 5px;
+                            font-family: open sans;
+                            font-size: 16px;
+                            font-weight: 600;
+                            background: none;
+                            color: #636388;
+                            border: none;
+                            text-decoration: none;
+                            cursor: pointer;
+                            
+                        }
+
+                   
+.vn-footer{
+    display: block;
+    background: #f4f4f4;
+}
+
+    .vn-footer-container{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+    }
+
+        .vn-footer-left{
+            display: inline-block;
+            flex-grow: 0;
+        }
+
+            .vn-footer-left-container{
+                width: 600px;
+                padding: 75px 0;
+            }
+
+                .vn-footer-logo{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                    .vn-footer-logo-container{
+                        width: 100%;
+                    }
+
+                        .vn-footer-logo-style{
+                            font-family: open sans;
+                            font-size: 30px;
+                            font-weight: 700;
+                            color: #454545;
+                            text-decoration: none;
+                        }
+
+                .vn-footer-travelapp-moto{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                    .vn-footer-travelapp-moto-container{
+                        width: 100%;
+                    }
+
+                        .vn-footer-travelapp-moto-style{
+                            font-family: montserrat;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #565656;
+                            text-decoration: none;
+                        }
+
+                .vn-footer-copyright{
+                    display: block;
+                    margin-top: 50px;
+                }
+
+                    .vn-footer-copyright-container{
+                        width: 100%;
+                    }
+
+                        .vn-footer-copyright-style{
+                            font-family: open sans;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #565656;
+                            text-decoration: none;
+                        }
+
+        .vn-footer-right{
+            display: inline-block;
+            flex-grow: 1;
+        }
+
+            .vn-footer-right-container{
+                display: flex;
+                flex-wrap: nowrap;
+                width: 600px;
+                height: auto;
+                padding: 75px 0;
+            }
+
+                .vn-developer{
+                    display: inline-block;
+                    flex-grow: 0;
+                }
+
+                    .vn-developer-container{
+                        width: 200px;
+                        height: auto;
+                    }
+
+                        .vn-developer-title{
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            font-family: open sans;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #343434;
+                            text-decoration: none;
+                        }
+
+                            .vn-developer-content a{
+                                display: block;
+                                height: 30px;
+                                line-height: 30px;
+                                font-family: open sans;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #565656;
+                                text-decoration: none;
+                            }
+
+                            .vn-developer-content a:hover{
+                                color: #4548ff;
+                            }
+
+                .vn-about{
+                    display: inline-block;
+                    flex-grow: 1;
+                }
+
+                    .vn-about-container{
+                        width: 200px;
+                        height: auto;
+                    }
+
+                        .vn-about-title{
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            font-family: open sans;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #343434;
+                            text-decoration: none;
+                        }
+
+                            .vn-about-content a{
+                                display: block;
+                                height: 30px;
+                                line-height: 30px;
+                                font-family: open sans;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #565656;
+                                text-decoration: none;
+                            }
+
+                            .vn-about-content a:hover{
+                                color: #4548ff;
+                            }
+
+                .vn-social-media{
+                    display: inline-block;
+                    flex-grow: 2;
+                }
+
+                    .vn-social-media-container{
+                        width: 200px;
+                        height: auto;
+                    }
+
+                        .vn-social-media-title{
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                            font-family: open sans;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #343434;
+                            text-decoration: none;
+                        }
+
+                            .vn-social-media-content a{
+                                display: block;
+                                height: 30px;
+                                line-height: 30px;
+                                display: block;
+                                font-family: open sans;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #565656;
+                                text-decoration: none;
+                            }
+
+                            .vn-social-media-content a:hover{
+                                color: #4548ff;
+                            }
