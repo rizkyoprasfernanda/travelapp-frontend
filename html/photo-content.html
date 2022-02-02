@@ -1,834 +1,1233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes foto content</title>
-    <link rel="stylesheet" href="../css/photo-content.css" />
-    <link rel="stylesheet" href="../font-awesome/css/all.css" />
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/photo-content.js"></script>
-</head>
-<body>
-    <div class="vn-photo-content-close">
-        <div class="vn-photo-content-close-container">
-            <button class="vn-photo-content-close-button"><i class="fas fa-times"></i></button>
-        </div>
-    </div>
-    <div class="vn-photo-content">
-        <div class="vn-photo-content-container">
-            <div class="vn-photo-content-left">
-                <div class="vn-photo-content-left-container">
-                    <div class="vn-photo-author-post">
-                        <div class="vn-photo-author-post-container">
-                            <div class="vn-author-post-profile-left">
-                                <div class="vn-author-post-profile-left-container">
-                                    <img src="../images/profile5.jpg">
-                                </div>
-                            </div>
-                            <div class="vn-author-post-profile-center">
-                                <div class="vn-author-post-profile-center-container">
-                                    <div class="vn-author-post-profile-name">
-                                        <div class="vn-author-post-profile-name-container">
-                                            <a class="vn-author-post-profile-name-style">Rizky Opras</a>
-                                        </div>
-                                    </div>
-                                    <div class="vn-author-post-profile-location">
-                                        <div class="vn-author-post-profile-location-container">
-                                            <a class="vn-author-post-profile-location-style">Guci Tegal Jawa Tengah</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vn-author-post-profile-right">
-                                <div class="vn-author-post-profile-right-container">
-                                    <div class="vn-author-post-profile-follow-button">
-                                        <button class="vn-author-post-profile-follow-button-style">Follow</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vn-author-photo-post">
-                        <div class="vn-author-photo-post-container">
-                            <div class="vn-author-photo-post-image">
-                                <img src="../image/img5.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="vn-photo-content-right">
-                <div class="vn-photo-content-right-container">
-                    <div class="vn-photo-content-post-navigation">
-                        <div class="vn-photo-content-post-navigation-container">
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style-other other-react-item dot-button"><i class="fas fa-ellipsis-h"></i></button>
-                                    <div class="vn-photo-dot-content">
-                                        <div class="vn-photo-dot-content-container">
-                                            <div class="vn-photo-dot-content-item">
-                                                <div class="vn-photo-dot-content-item-container">
-                                                    <a class="vn-photo-dot-content-item-style">
-                                                        <i class="fas fa-user margin-icon"></i>Follow Rizky..
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-dot-content-item">
-                                                <div class="vn-photo-dot-content-item-container">
-                                                    <a class="vn-photo-dot-content-item-style">
-                                                        <i class="fas fa-frown margin-icon"></i>Not Interest
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-dot-content-item">
-                                                <div class="vn-photo-dot-content-item-container">
-                                                    <a class="vn-photo-dot-content-item-style">
-                                                        <i class="fas fa-exclamation margin-icon"></i>Report
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-dot-content-item">
-                                                <div class="vn-photo-dot-content-item-container">
-                                                    <a class="vn-photo-dot-content-item-style">
-                                                        <i class="fas fa-question margin-icon"></i>Help
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style-other other-react-item share-button"><i class="fas fa-share"></i></button>
-                                    <div class="vn-photo-share-content">
-                                        <div class="vn-photo-share-content-container">
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="far fa-clone margin-icon"></i>Copy Link
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="fab fa-instagram margin-icon"></i>Instagram
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="fab fa-facebook-f margin-icon"></i>Facebook
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="fab fa-whatsapp margin-icon"></i>Whatsapp
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="fab fa-twitter margin-icon"></i>Twitter
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-share-content-item">
-                                                <div class="vn-photo-share-content-item-container">
-                                                    <a class="vn-photo-share-content-item-style">
-                                                        <i class="fab fa-pinterest-p margin-icon"></i>Pinterest
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation-wrapper"></div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style react-icon-pinned"><i class="fas fa-thumbtack"></i></button>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style react-icon-map"><i class="fas fa-location-arrow"></i></button>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style react-icon-comment"><i class="fas fa-comment-alt"></i></button>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style react-icon-bookmark"><i class="fas fa-bookmark"></i></button>
-                                </div>
-                            </div>
-                            <div class="vn-photo-navigation">
-                                <div class="vn-photo-navigation-container">
-                                    <button class="vn-photo-navigation-style react-icon-love"><i class="fas fa-heart"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vn-photo-navigation-commentar-content">
-                        <div class="vn-photo-navigation-commentar-content-container">
-                            <div class="vn-photo-navigation-tittle">
-                                <div class="vn-photo-navigation-tittle-container">
-                                    <a class="vn-photo-navigation-titlle-style">Commentar</a>
-                                </div>
-                            </div>
-                            <div class="vn-photo-user-commentar">
-                                <div class="vn-photo-user-commentar-container">
-                                    <div class="vn-photo-user-impression vn-photo-caption">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/profile5.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Rizky Opras</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">2 hour ago</a>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                Waktu Liburan Ke Guci Kemaren<br>
-                                                                #guci #tegal 
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>tes foto content</title>
+		<link rel="stylesheet" href="../css/photo-content.css" />
+		<link rel="stylesheet" href="../font-awesome/css/all.css" />
+		<script src="../js/jquery-3.6.0.min.js"></script>
+		<script src="../js/photo-content.js"></script>
+	</head>
+	<body>
+		<div class="vn-photo-content-close">
+			<div class="vn-photo-content-close-container">
+				<button class="vn-photo-content-close-button">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+		</div>
+		<div class="vn-photo-content">
+			<div class="vn-photo-content-container">
+				<div class="vn-photo-content-left">
+					<div class="vn-photo-content-left-container">
+						<div class="vn-photo-author-post">
+							<div class="vn-photo-author-post-container">
+								<div class="vn-author-post-profile-left">
+									<div class="vn-author-post-profile-left-container">
+										<img src="../images/profile5.jpg" />
+									</div>
+								</div>
+								<div class="vn-author-post-profile-center">
+									<div class="vn-author-post-profile-center-container">
+										<div class="vn-author-post-profile-name">
+											<div class="vn-author-post-profile-name-container">
+												<a class="vn-author-post-profile-name-style"
+													>Rizky Opras</a
+												>
+											</div>
+										</div>
+										<div class="vn-author-post-profile-location">
+											<div class="vn-author-post-profile-location-container">
+												<a class="vn-author-post-profile-location-style"
+													>Guci Tegal Jawa Tengah</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vn-author-post-profile-right">
+									<div class="vn-author-post-profile-right-container">
+										<div class="vn-author-post-profile-follow-button">
+											<button
+												class="vn-author-post-profile-follow-button-style"
+											>
+												Follow
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vn-author-photo-post">
+							<div class="vn-author-photo-post-container">
+								<div class="vn-author-photo-post-image">
+									<img src="../image/img5.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vn-photo-content-right">
+					<div class="vn-photo-content-right-container">
+						<div class="vn-photo-content-post-navigation">
+							<div class="vn-photo-content-post-navigation-container">
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button
+											class="vn-photo-navigation-style-other other-react-item dot-button"
+										>
+											<i class="fas fa-ellipsis-h"></i>
+										</button>
+										<div class="vn-photo-dot-content">
+											<div class="vn-photo-dot-content-container">
+												<div class="vn-photo-dot-content-item">
+													<div class="vn-photo-dot-content-item-container">
+														<a class="vn-photo-dot-content-item-style">
+															<i class="fas fa-user margin-icon"></i>Follow
+															Rizky..
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-dot-content-item">
+													<div class="vn-photo-dot-content-item-container">
+														<a class="vn-photo-dot-content-item-style">
+															<i class="fas fa-frown margin-icon"></i>Not
+															Interest
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-dot-content-item">
+													<div class="vn-photo-dot-content-item-container">
+														<a class="vn-photo-dot-content-item-style">
+															<i class="fas fa-exclamation margin-icon"></i
+															>Report
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-dot-content-item">
+													<div class="vn-photo-dot-content-item-container">
+														<a class="vn-photo-dot-content-item-style">
+															<i class="fas fa-question margin-icon"></i>Help
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button
+											class="vn-photo-navigation-style-other other-react-item share-button"
+										>
+											<i class="fas fa-share"></i>
+										</button>
+										<div class="vn-photo-share-content">
+											<div class="vn-photo-share-content-container">
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="far fa-clone margin-icon"></i>Copy Link
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="fab fa-instagram margin-icon"></i
+															>Instagram
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="fab fa-facebook-f margin-icon"></i
+															>Facebook
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="fab fa-whatsapp margin-icon"></i
+															>Whatsapp
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="fab fa-twitter margin-icon"></i>Twitter
+														</a>
+													</div>
+												</div>
+												<div class="vn-photo-share-content-item">
+													<div class="vn-photo-share-content-item-container">
+														<a class="vn-photo-share-content-item-style">
+															<i class="fab fa-pinterest-p margin-icon"></i
+															>Pinterest
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vn-photo-navigation-wrapper"></div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button class="vn-photo-navigation-style react-icon-pinned">
+											<i class="fas fa-thumbtack"></i>
+										</button>
+									</div>
+								</div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button class="vn-photo-navigation-style react-icon-map">
+											<i class="fas fa-location-arrow"></i>
+										</button>
+									</div>
+								</div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button
+											class="vn-photo-navigation-style react-icon-comment"
+										>
+											<i class="fas fa-comment-alt"></i>
+										</button>
+									</div>
+								</div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button
+											class="vn-photo-navigation-style react-icon-bookmark"
+										>
+											<i class="fas fa-bookmark"></i>
+										</button>
+									</div>
+								</div>
+								<div class="vn-photo-navigation">
+									<div class="vn-photo-navigation-container">
+										<button class="vn-photo-navigation-style react-icon-love">
+											<i class="fas fa-heart"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vn-photo-navigation-commentar-content active-content">
+							<div class="vn-photo-navigation-commentar-content-container">
+								<div class="vn-photo-navigation-tittle">
+									<div class="vn-photo-navigation-tittle-container">
+										<a class="vn-photo-navigation-titlle-style">Commentar</a>
+									</div>
+								</div>
+								<div class="vn-photo-user-commentar">
+									<div class="vn-photo-user-commentar-container">
+										<div class="vn-photo-user-impression vn-photo-caption">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/profile5.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Rizky Opras</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>2 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	Waktu Liburan Ke Guci Kemaren<br />
+																	#guci #tegal
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-user-impression">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/profile3.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Khairul Anwar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                Boleh tau itu dimana ?
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-user-impression">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/profile3.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Khairul Anwar</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	Boleh tau itu dimana ?
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-user-impression">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/profile4.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Ilham Azhar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                Bukannya itu masih ditutup ya karena covid ?
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-user-impression">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/profile4.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Ilham Azhar</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	Bukannya itu masih ditutup ya karena covid ?
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-user-impression">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/madara.png">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Hasbi Rizki</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                Tiketnya Berapa Bang ?
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-user-impression">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/madara.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Hasbi Rizki</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	Tiketnya Berapa Bang ?
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-user-impression">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/author.png">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Syahrul Mubarok</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                siip
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-user-impression">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/author.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Syahrul Mubarok</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	siip
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-user-impression">
-                                        <div class="vn-photo-user-impression-container">
-                                            <div class="vn-photo-user-impression-left">
-                                                <div class="vn-photo-user-impression-left-container">
-                                                    <div class="vn-photo-user-impression-profile">
-                                                        <div class="vn-photo-user-impression-profile-container">
-                                                            <img src="../images/profile3.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-user-impression-right">
-                                                <div class="vn-photo-user-impression-right-container">
-                                                    <div class="vn-photo-user-impression-data">
-                                                        <div class="vn-photo-user-impression-data-container">
-                                                            <div class="vn-photo-user-impression-data-name">
-                                                                <div class="vn-photo-user-impression-data-name-container">
-                                                                    <a class="vn-photo-user-impression-data-name-style">Khairul Anwar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-user-impression-data-time">
-                                                                <div class="vn-photo-user-impression-data-time-container">
-                                                                    <a class="vn-photo-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-user-impression-data-fill">
-                                                        <div class="vn-photo-user-impression-data-fill-container">
-                                                            <a class="vn-photo-user-impression-data-fill-style">
-                                                                Boleh tau itu dimana ?
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-user-impression">
+											<div class="vn-photo-user-impression-container">
+												<div class="vn-photo-user-impression-left">
+													<div class="vn-photo-user-impression-left-container">
+														<div class="vn-photo-user-impression-profile">
+															<div
+																class="vn-photo-user-impression-profile-container"
+															>
+																<img src="../images/profile3.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-user-impression-right">
+													<div class="vn-photo-user-impression-right-container">
+														<div class="vn-photo-user-impression-data">
+															<div
+																class="vn-photo-user-impression-data-container"
+															>
+																<div class="vn-photo-user-impression-data-name">
+																	<div
+																		class="vn-photo-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-name-style"
+																			>Khairul Anwar</a
+																		>
+																	</div>
+																</div>
+																<div class="vn-photo-user-impression-data-time">
+																	<div
+																		class="vn-photo-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vn-photo-user-impression-data-fill">
+															<div
+																class="vn-photo-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-user-impression-data-fill-style"
+																>
+																	Boleh tau itu dimana ?
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vn-photo-user-commentar-textbox">
+									<div class="vn-photo-user-commentar-textbox-container">
+										<div class="vn-photo-commentar-textbox-left">
+											<div class="vn-photo-commentar-textbox-left-container">
+												<div class="vn-photo-commentar-user-profile">
+													<img src="../images/profile5.jpg" />
+												</div>
+											</div>
+										</div>
+										<div class="vn-photo-commentar-textbox-center">
+											<div class="vn-photo-commentar-textbox-center-container">
+												<input
+													id="vn-photo-commentar-textbox-text"
+													class="vn-photo-commentar-textbox-text"
+													type="text"
+													name="text"
+													placeholder=""
+												/>
+												<button
+													id="vn-photo-commentar-emoticon-button"
+													class="vn-photo-commentar-emoticon-button"
+													name="submit"
+												>
+													<i class="fas fa-laugh-wink"></i>
+												</button>
+												<div class="vn-commentar-textbox-emoticon-content">
+													<div
+														class="vn-commentar-textbox-emoticon-content-container"
+													>
+														<div class="vn-commentar-emoticon">
+															<span onclick="injectEmojisToList(this)">😃</span>
+															<span onclick="injectEmojisToList(this)">😁</span>
+															<span onclick="injectEmojisToList(this)">😅</span>
+															<span onclick="injectEmojisToList(this)">🤣</span>
+															<span onclick="injectEmojisToList(this)">😉</span>
+															<span onclick="injectEmojisToList(this)">😊</span>
+															<span onclick="injectEmojisToList(this)">😇</span>
+															<span onclick="injectEmojisToList(this)">😲</span>
+															<span onclick="injectEmojisToList(this)">😳</span>
+															<span onclick="injectEmojisToList(this)">😥</span>
+															<span onclick="injectEmojisToList(this)">🥰</span>
+															<span onclick="injectEmojisToList(this)">😍</span>
+															<span onclick="injectEmojisToList(this)">😘</span>
+															<span onclick="injectEmojisToList(this)">😜</span>
+															<span onclick="injectEmojisToList(this)">🤫</span>
+															<span onclick="injectEmojisToList(this)">🤤</span>
+															<span onclick="injectEmojisToList(this)">😈</span>
+															<span onclick="injectEmojisToList(this)">😻</span>
+															<span onclick="injectEmojisToList(this)">🙈</span>
+															<span onclick="injectEmojisToList(this)">🙊</span>
+															<span onclick="injectEmojisToList(this)">💘</span>
+															<span onclick="injectEmojisToList(this)">💕</span>
+															<span onclick="injectEmojisToList(this)">💞</span>
+															<span onclick="injectEmojisToList(this)">💌</span>
+															<span onclick="injectEmojisToList(this)">💑</span>
+															<span onclick="injectEmojisToList(this)">💐</span>
+															<span onclick="injectEmojisToList(this)">🌹</span>
+															<span onclick="injectEmojisToList(this)">🎀</span>
+															<span onclick="injectEmojisToList(this)">🍭</span>
+															<span onclick="injectEmojisToList(this)">💃</span>
+															<span onclick="injectEmojisToList(this)">🏄</span>
+															<span onclick="injectEmojisToList(this)">🛀</span>
+															<span onclick="injectEmojisToList(this)">🏩</span>
+															<span onclick="injectEmojisToList(this)">👑</span>
+															<span onclick="injectEmojisToList(this)">🦁</span>
+															<span onclick="injectEmojisToList(this)">🦄</span>
+															<span onclick="injectEmojisToList(this)">🎠</span>
+															<span onclick="injectEmojisToList(this)">🧸</span>
+															<span onclick="injectEmojisToList(this)">💍</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vn-photo-commentar-textbox-right">
+											<div class="vn-photo-commentar-textbox-right-container">
+												<div class="vn-photo-commentar-textbox-button">
+													<div
+														class="vn-photo-commentar-textbox-button-container"
+													>
+														<button class="vn-photo-commentar-send-button">
+															Send
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                                </div>
-                            </div>
-                            <div class="vn-photo-user-commentar-textbox">
-                                <div class="vn-photo-user-commentar-textbox-container">
-                                    <div class="vn-photo-commentar-textbox-left">
-                                        <div class="vn-photo-commentar-textbox-left-container">
-                                            <div class="vn-photo-commentar-user-profile">
-                                                <img src="../images/profile5.jpg">    
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="vn-photo-commentar-textbox-center">
-                                        <div class="vn-photo-commentar-textbox-center-container">
-                                            <input id="vn-photo-commentar-textbox-text" class="vn-photo-commentar-textbox-text" type="text" name="text" placeholder="">
-                                            <button id="vn-photo-commentar-emoticon-button" class="vn-photo-commentar-emoticon-button" name="submit"><i class="fas fa-laugh-wink"></i></button>
-                                            <div class="vn-commentar-textbox-emoticon-content">
-                                                <div class="vn-commentar-textbox-emoticon-content-container">
-                                                    <div class="vn-commentar-emoticon">
-                                                        <span onclick="injectEmojisToList(this)">😃</span>
-                                                        <span onclick="injectEmojisToList(this)">😁</span>
-                                                        <span onclick="injectEmojisToList(this)">😅</span>
-                                                        <span onclick="injectEmojisToList(this)">🤣</span>
-                                                        <span onclick="injectEmojisToList(this)">😉</span>
-                                                        <span onclick="injectEmojisToList(this)">😊</span>
-                                                        <span onclick="injectEmojisToList(this)">😇</span>
-                                                        <span onclick="injectEmojisToList(this)">😲</span>
-                                                        <span onclick="injectEmojisToList(this)">😳</span>
-                                                        <span onclick="injectEmojisToList(this)">😥</span>
-                                                        <span onclick="injectEmojisToList(this)">🥰</span>
-                                                        <span onclick="injectEmojisToList(this)">😍</span>
-                                                        <span onclick="injectEmojisToList(this)">😘</span>
-                                                        <span onclick="injectEmojisToList(this)">😜</span>
-                                                        <span onclick="injectEmojisToList(this)">🤫</span>
-                                                        <span onclick="injectEmojisToList(this)">🤤</span>
-                                                        <span onclick="injectEmojisToList(this)">😈</span>
-                                                        <span onclick="injectEmojisToList(this)">😻</span>
-                                                        <span onclick="injectEmojisToList(this)">🙈</span>
-                                                        <span onclick="injectEmojisToList(this)">🙊</span>
-                                                        <span onclick="injectEmojisToList(this)">💘</span>
-                                                        <span onclick="injectEmojisToList(this)">💕</span>
-                                                        <span onclick="injectEmojisToList(this)">💞</span>
-                                                        <span onclick="injectEmojisToList(this)">💌</span>
-                                                        <span onclick="injectEmojisToList(this)">💑</span>
-                                                        <span onclick="injectEmojisToList(this)">💐</span>
-                                                        <span onclick="injectEmojisToList(this)">🌹</span>
-                                                        <span onclick="injectEmojisToList(this)">🎀</span>
-                                                        <span onclick="injectEmojisToList(this)">🍭</span>
-                                                        <span onclick="injectEmojisToList(this)">💃</span>
-                                                        <span onclick="injectEmojisToList(this)">🏄</span>
-                                                        <span onclick="injectEmojisToList(this)">🛀</span>
-                                                        <span onclick="injectEmojisToList(this)">🏩</span>
-                                                        <span onclick="injectEmojisToList(this)">👑</span>
-                                                        <span onclick="injectEmojisToList(this)">🦁</span>
-                                                        <span onclick="injectEmojisToList(this)">🦄</span>
-                                                        <span onclick="injectEmojisToList(this)">🎠</span>
-                                                        <span onclick="injectEmojisToList(this)">🧸</span>
-                                                        <span onclick="injectEmojisToList(this)">💍</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="vn-photo-commentar-textbox-right">
-                                        <div class="vn-photo-commentar-textbox-right-container">
-                                            <div class="vn-photo-commentar-textbox-button">
-                                                <div class="vn-photo-commentar-textbox-button-container">
-                                                    <button class="vn-photo-commentar-send-button">Send</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+						<div class="vn-photo-map-content">
+							<div class="vn-photo-map-content-container">
+								<div class="vn-photo-map-tittle">
+									<div class="vn-photo-map-tittle-container">
+										<a class="vn-photo-map-titlle-style">Locations</a>
+									</div>
+								</div>
+								<div class="vn-photo-map">
+									<div class="vn-photo-map-container">
+										<a class="vn-photo-map-container-text-style"
+											>Avaible Soon</a
+										>
+									</div>
+								</div>
+								<div class="vn-photo-map-button-box">
+									<div class="vn-photo-map-button-box-container">
+										<div class="vn-photo-map-button-left">
+											<div class="vn-photo-map-button-left-container">
+												<div class="vn-photo-map-button">
+													<button class="vn-photo-map-direction-button-style">
+														<i class="fas fa-directions margin-icon"></i
+														>Direction
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="vn-photo-map-button-right">
+											<div class="vn-photo-map-button-right-container">
+												<div class="vn-photo-map-right-button map-right-share">
+													<button class="vn-photo-map-right-button-style">
+														<i class="fas fa-share"></i>
+													</button>
+													<div class="vn-photo-share-hover-content">Share</div>
+												</div>
+												<div
+													class="vn-photo-map-right-button map-right-bookmark"
+												>
+													<button class="vn-photo-map-right-button-style">
+														<i class="fas fa-bookmark"></i>
+													</button>
+													<div class="vn-photo-bookmark-hover-content">
+														Save location
+													</div>
+												</div>
+												<div class="vn-photo-map-right-button map-right-gmaps">
+													<button class="vn-photo-map-right-button-style">
+														<i class="fas fa-square"></i>
+													</button>
+													<div class="vn-photo-gmaps-hover-content">
+														Open Google Map
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="vn-photo-map-content">
-                        <div class="vn-photo-map-content-container">
-                            <div class="vn-photo-map-tittle">
-                                <div class="vn-photo-map-tittle-container">
-                                    <a class="vn-photo-map-titlle-style">Locations</a>
-                                </div>
-                            </div>
-                            <div class="vn-photo-map">
-                                <div class="vn-photo-map-container">
-                                    <a class="vn-photo-map-container-text-style">Avaible Soon</a>
-                                </div>
-                            </div>
-                            <div class="vn-photo-map-button-box">
-                                <div class="vn-photo-map-button-box-container">
-                                    <div class="vn-photo-map-button-left">
-                                        <div class="vn-photo-map-button-left-container">
-                                            <div class="vn-photo-map-button">
-                                                <button class="vn-photo-map-direction-button-style"><i class="fas fa-directions margin-icon"></i>Direction</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="vn-photo-map-button-right">
-                                        <div class="vn-photo-map-button-right-container">
-                                            <div class="vn-photo-map-right-button map-right-share">
-                                                <button class="vn-photo-map-right-button-style"><i class="fas fa-share"></i></button>
-                                                <div class="vn-photo-share-hover-content">Share</div>
-                                            </div>
-                                            <div class="vn-photo-map-right-button map-right-bookmark">
-                                                <button class="vn-photo-map-right-button-style"><i class="fas fa-bookmark"></i></button>
-                                                <div class="vn-photo-bookmark-hover-content">Save location</div>
-                                            </div>
-                                            <div class="vn-photo-map-right-button map-right-gmaps">
-                                                <button class="vn-photo-map-right-button-style"><i class="fas fa-square"></i></button>
-                                                <div class="vn-photo-gmaps-hover-content">Open Google Map</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="vn-photo-pinned-content">
+							<div class="vn-photo-pinned-content-container">
+								<div class="vn-photo-pinned-tittle">
+									<div class="vn-photo-pinned-tittle-container">
+										<a class="vn-photo-pinned-titlle-style">Pinned</a>
+									</div>
+								</div>
+								<div class="vn-photo-pinned-data">
+									<div class="vn-photo-pinned-data-container">
+										<div class="vn-photo-pinned-user-impression user-pinned">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/profile5.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Rizky Opras</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	Kemaren Harga Tiket Masuknya 50K <br />
+																	Parkir 2K <br />
+																	Tempatnya Bagus Banget sih
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                    <div class="vn-photo-pinned-content">
-                        <div class="vn-photo-pinned-content-container">
-                            <div class="vn-photo-pinned-tittle">
-                                <div class="vn-photo-pinned-tittle-container">
-                                    <a class="vn-photo-pinned-titlle-style">Pinned</a>
-                                </div>
-                            </div>
-                            <div class="vn-photo-pinned-data">
-                                <div class="vn-photo-pinned-data-container">
+										<div class="vn-photo-pinned-user-impression">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/profile3.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Khairul Anwar</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	Jalannya kurang rata, becek
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-pinned-user-impression user-pinned">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/profile5.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Rizky Opras</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                Kemaren Harga Tiket Masuknya 50K <br>
-                                                                Parkir 2K <br>
-                                                                Tempatnya Bagus Banget sih
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-pinned-user-impression">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/profile4.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Fiqih Iman</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	Kalo Weekend Ada ganjil Genap
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-pinned-user-impression">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/profile3.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Khairul Anwar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                Jalannya kurang rata, becek
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-pinned-user-impression">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/madara.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Hasbi Rizki</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	Sediakan Jas Ujan Karena disana keujanan
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-pinned-user-impression">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/profile4.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Fiqih Iman</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                Kalo Weekend Ada ganjil Genap
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="vn-photo-pinned-user-impression">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/profile3.jpg" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Khairul Anwar</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	Disana banyak yang jualan makanan dan minuman
+																	sepanjjang jalan jadi gausah khawatir dan
+																	gausah bawa bekel banyak juga
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="vn-photo-pinned-user-impression">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/madara.png">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Hasbi Rizki</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                Sediakan Jas Ujan Karena disana keujanan
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vn-photo-pinned-user-impression">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/profile3.jpg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Khairul Anwar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                Disana banyak yang jualan makanan dan minuman sepanjjang jalan jadi gausah khawatir dan gausah bawa bekel banyak juga
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="vn-photo-pinned-user-impression">
-                                        <div class="vn-photo-pinned-user-impression-container">
-                                            <div class="vn-photo-pinned-user-impression-left">
-                                                <div class="vn-photo-pinned-user-impression-left-container">
-                                                    <div class="vn-photo-pinned-user-impression-profile">
-                                                        <div class="vn-photo-pinned-user-impression-profile-container">
-                                                            <img src="../images/madara.png">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="vn-photo-pinned-user-impression-right">
-                                                <div class="vn-photo-pinned-user-impression-right-container">
-                                                    <div class="vn-photo-pinned-user-impression-data">
-                                                        <div class="vn-photo-pinned-user-impression-data-container">
-                                                            <div class="vn-photo-pinned-user-impression-data-name">
-                                                                <div class="vn-photo-pinned-user-impression-data-name-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-name-style">Hasbi Rizki</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-data-time">
-                                                                <div class="vn-photo-pinned-user-impression-data-time-container">
-                                                                    <a class="vn-photo-pinned-user-impression-data-time-style">1 hour ago</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vn-photo-pinned-user-impression-pinned-icon">
-                                                                <div class="vn-photo-pinned-user-impression-pinned-icon-container">
-                                                                    <a class="vn-photo-pinned-user-impression-pinned-icon-style"><i class="fas fa-thumbtack"></i></a>
-                                                                </div>
-                                                            </div>   
-                                                        </div>
-                                                    </div>
-                                                     <div class="vn-photo-pinned-user-impression-data-fill">
-                                                        <div class="vn-photo-pinned-user-impression-data-fill-container">
-                                                            <a class="vn-photo-pinned-user-impression-data-fill-style">
-                                                                install peduli lindungi gan karena masuk pake itu
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</body>
+										<div class="vn-photo-pinned-user-impression">
+											<div class="vn-photo-pinned-user-impression-container">
+												<div class="vn-photo-pinned-user-impression-left">
+													<div
+														class="vn-photo-pinned-user-impression-left-container"
+													>
+														<div
+															class="vn-photo-pinned-user-impression-profile"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-profile-container"
+															>
+																<img src="../images/madara.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="vn-photo-pinned-user-impression-right">
+													<div
+														class="vn-photo-pinned-user-impression-right-container"
+													>
+														<div class="vn-photo-pinned-user-impression-data">
+															<div
+																class="vn-photo-pinned-user-impression-data-container"
+															>
+																<div
+																	class="vn-photo-pinned-user-impression-data-name"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-name-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-name-style"
+																			>Hasbi Rizki</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-data-time"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-data-time-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-data-time-style"
+																			>1 hour ago</a
+																		>
+																	</div>
+																</div>
+																<div
+																	class="vn-photo-pinned-user-impression-pinned-icon"
+																>
+																	<div
+																		class="vn-photo-pinned-user-impression-pinned-icon-container"
+																	>
+																		<a
+																			class="vn-photo-pinned-user-impression-pinned-icon-style"
+																			><i class="fas fa-thumbtack"></i
+																		></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div
+															class="vn-photo-pinned-user-impression-data-fill"
+														>
+															<div
+																class="vn-photo-pinned-user-impression-data-fill-container"
+															>
+																<a
+																	class="vn-photo-pinned-user-impression-data-fill-style"
+																>
+																	install peduli lindungi gan karena masuk pake
+																	itu
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

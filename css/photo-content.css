@@ -419,7 +419,7 @@ body{
         }
 
                     .vn-photo-navigation-commentar-content{ /* commentar */
-                        display: block;
+                        display: none;
                     }
 
                     .vn-photo-navigation-commentar-content.active-content{ /* commentar */
@@ -1114,4 +1114,27 @@ body{
                                 font-size: 12px;
                                 font-weight: 600;
                                 color: #343434;
+                            }
+
+
+                            .active-react-icon-map{
+                                color: #fd3560;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #fd3560;
+                                background: #ffdfe6;
+                                border: 2px solid #ffdfe6;
+                            }
+                            .active-react-icon-pinned{
+                                color: #fd3560;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #fd3560;
+                                background: #ffdfe6;
+                                border: 2px solid #ffdfe6;
+                            }
+                            .active-react-icon-comment{
+                                color: #fd3560;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #fd3560;
+                                background: #ffdfe6;
+                                border: 2px solid #ffdfe6;
                             }
