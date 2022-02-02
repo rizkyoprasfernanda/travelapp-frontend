@@ -24,4 +24,9 @@ $(document).ready(function () {
 			$(this).next(".vn-info-3dot-button-content").addClass("active");
 		}
 	});
+
+  
+	$(".commentar").click(function (e) {
+    $('vn-modal-photo-content').toggleClass('active')
+  })
 });
