@@ -200,90 +200,111 @@ body{
                 }
 
                     .vn-photo-content-post-navigation-container{
+                        display: flex;
+                        flex-wrap: nowrap;
                         width: 500px;
                         max-width: 500px;
                         height: 50px;
+                        max-height: 50px;
                     }
 
-                        .vn-photo-navigation{
-                            display: block;
-                            float: right;
+                    .vn-photo-navigation-left{
+                        display: block;
+                        flex-grow: 0;
+                    }
+
+                    .vn-photo-navigation-left-container{
+                        width: 350px;
+                        max-width: 350px;
+                        height: 50px;
+                        max-height: 50px;
+                    }
+
+                        .vn-photo-navigation-love{
+                            display: inline-block;
+                            margin-right: 5px;
                         }
 
-                        .vn-photo-navigation-wrapper{
-                            display: block;
-                            float: right;
-                            width: 115px;
+                            .vn-photo-navigation-love-container{
+                                max-width: 100px;
+                                height: 50px;
+                            }
+
+                            .vn-photo-navigation-love-style{
+                                width: auto;
+                                padding: 0 13px;
+                                height: 50px;
+                                max-height: 50px;
+                                text-align: center;
+                                font-family: open sans;
+                                font-size: 20px;
+                                font-weight: 600;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                background: none;
+                                color: #636388;
+                                border: 2px solid #f4f4f4;
+                            }
+
+                            .vn-photo-navigation-love-style:hover{
+                                background: #ffdfe6;
+                                border: 2px solid #ffdfe6;
+                            }
+
+                            .vn-photo-navigation-love-style:hover .react-icon-love-icon{
+                                color: none;
+                                -webkit-text-stroke-color: #fd3560;
+                                background: none;
+                            }
+
+                            .react-icon-love-icon{
+                                margin-right: 5px;
+                                background: none;
+                                color: transparent;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #636388;
+                            }
+
+                            .react-icon-love-icon.active-react{
+                                color: #fd3560;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #fd3560;
+                                background: none;
+                            }
+
+                    .vn-photo-navigation{
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                    
+                        .vn-photo-navigation-container{
+                            width: 50px;
                             height: 50px;
                         }
 
-                            .vn-photo-navigation-container{
+                            .vn-photo-navigation-style{
                                 width: 50px;
+                                max-width: 50px;
                                 height: 50px;
-                                margin-right: 5px;
+                                max-height: 50px;
+                                text-align: center;
+                                font-size: 20px;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                color: transparent;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #636388;
+                                background: none;
+                                border: 2px solid #f4f4f4;
                             }
 
-                                .vn-photo-navigation-style{
-                                    width: 50px;
-                                    max-width: 50px;
-                                    height: 50px;
-                                    max-height: 50px;
-                                    text-align: center;
-                                    font-size: 20px;
-                                    border-radius: 5px;
-                                    cursor: pointer;
-                                    color: transparent;
-                                    -webkit-text-stroke-width: 2px;
-                                    -webkit-text-stroke-color: #636388;
-                                    background: none;
-                                    border: 2px solid #f4f4f4;
-                                }
-
-                                .vn-photo-navigation-style-other{
-                                    width: 50px;
-                                    max-width: 50px;
-                                    height: 50px;
-                                    max-height: 50px;
-                                    text-align: center;
-                                    font-size: 20px;
-                                    border-radius: 5px;
-                                    cursor: pointer;
-                                    color: #636388;
-                                    background: #efefef;
-                                    border: none;
-                                }
-
-                                .react-icon:hover{
-                                    color: none;
-                                    -webkit-text-stroke-width: 2px;
-                                    -webkit-text-stroke-color: #3542fd;
-                                    background: #dfe5ff;
-                                    border: 2px solid #dfe5ff;
-                                }
-
-                                .react-icon-love{
-                                    color: transparent;
-                                    -webkit-text-stroke-width: 2px;
-                                    -webkit-text-stroke-color: #636388;
-                                    background: none;
-                                    border: 2px solid #f4f4f4;
-                                }
-
-                                .active-react-icon-love{
-                                    color: #fd3560;
-                                    -webkit-text-stroke-width: 2px;
-                                    -webkit-text-stroke-color: #fd3560;
-                                    background: #ffdfe6;
-                                    border: 2px solid #ffdfe6;
-                                }
-
-                                .react-icon-love:hover{
-                                    color: none;
-                                    -webkit-text-stroke-width: 2px;
-                                    -webkit-text-stroke-color: #fd3560;
-                                    background: #ffdfe6;
-                                    border: 2px solid #ffdfe6;
-                                }
+                            .vn-photo-navigation-style:hover{
+                                color: none;
+                                -webkit-text-stroke-width: 2px;
+                                -webkit-text-stroke-color: #3542fd;
+                                background: #dfe5ff;
+                                border: 2px solid #dfe5ff;
+                            }
 
                                 .react-icon-bookmark{
                                     color: transparent;
@@ -297,8 +318,6 @@ body{
                                     color: #ffa217;
                                     -webkit-text-stroke-width: 2px;
                                     -webkit-text-stroke-color: #ffa217;
-                                    background: #fde7d1;
-                                    border: 2px solid #fde7d1;
                                 }
 
                                 .react-icon-bookmark:hover{
@@ -309,30 +328,176 @@ body{
                                     border: 2px solid #fde7d1;
                                 }
 
-                                .photo-navigation-active-react{
+                                .active-react-icon-map{
                                     color: #3542fd;
                                     -webkit-text-stroke-width: 2px;
                                     -webkit-text-stroke-color: #3542fd;
-                                    background: #dfe5ff;
-                                    border: 2px solid #dfe5ff;
+                                }
+                                .active-react-icon-pinned{
+                                    color: #3542fd;
+                                    -webkit-text-stroke-width: 2px;
+                                    -webkit-text-stroke-color: #3542fd;
+                                }
+                                .active-react-icon-comment{
+                                    color: #3542fd;
+                                    -webkit-text-stroke-width: 2px;
+                                    -webkit-text-stroke-color: #3542fd;
                                 }
 
-                                .other-react-item.active-content{
-                                    background: #3542fd;
-                                    color: #eee;
-                                }
+              
+                        
+                    .vn-photo-navigation-right{
+                        display: block;
+                        flex-grow: 1;
+                    }
 
-                                .other-react-item:hover{
-                                    background: #3542fd;
-                                    color: #eee;
-                                }
+                    .vn-photo-navigation-right-container{
+                        width: 150px;
+                        height: 100%;
+                    }
 
+                        .vn-photo-navigation-other{
+                            display: block;
+                            margin-left: 5px;
+                            float: right;
+                        }
+                        
+                        .vn-photo-navigation-other-container{
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        .vn-photo-navigation-other-style{
+                            width: 50px;
+                            max-width: 50px;
+                            height: 50px;
+                            max-height: 50px;
+                            text-align: center;
+                            font-size: 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            color: #636388;
+                            background: #efefef;
+                            border: none;
+                        }
+
+                            .other-react-item.active-content{
+                                background: #3542fd;
+                                color: #eee;
+                            }
+        
+                            .other-react-item:hover{
+                                background: #3542fd;
+                                color: #eee;
+                            }
+
+                    
+
+.vn-photo-navigation-bookmark-hover-content{
+    display: none;
+    position: absolute;
+    z-index: 55;
+    margin-top: 12px;
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #efefef;
+    cursor: pointer;
+    color: #636388;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+}
+
+.navigation-bookmark-icon:hover .vn-photo-navigation-bookmark-hover-content{
+    display: block;
+}
+
+.vn-photo-navigation-commentar-hover-content{
+    display: none;
+    position: absolute;
+    z-index: 55;
+    margin-top: 12px;
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #efefef;
+    cursor: pointer;
+    color: #636388;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+}
+
+.navigation-commentar-icon:hover .vn-photo-navigation-commentar-hover-content{
+    display: block;
+}
+
+.vn-photo-navigation-maps-hover-content{
+    display: none;
+    position: absolute;
+    z-index: 55;
+    margin-top: 12px;
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #efefef;
+    cursor: pointer;
+    color: #636388;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+}
+
+.navigation-maps-icon:hover .vn-photo-navigation-maps-hover-content{
+    display: block;
+}
+
+.vn-photo-navigation-pinned-hover-content{
+    display: none;
+    position: absolute;
+    z-index: 55;
+    margin-top: 12px;
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #efefef;
+    cursor: pointer;
+    color: #636388;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+}
+
+.navigation-pinned-icon:hover .vn-photo-navigation-pinned-hover-content{
+    display: block;
+}
 
 .vn-photo-share-content{
     display: none;
     position: absolute;
     margin-top: 20px;
-    margin-left: 0px;
+    margin-left: -40px;
 }
 
 .vn-photo-share-content.active-content{
@@ -465,10 +630,17 @@ body{
                                 display: none;
                             }
 
-                            .vn-photo-user-impression{  
+                            .vn-photo-user-impression{ 
                                 background: none;
                                 display: block;
                                 padding: 10px 20px;
+                                border-radius: 10px;
+                                margin-bottom: 5px;
+                                border: 2px solid transparent;
+                            }
+
+                            .vn-photo-user-impression.active-pinned{ 
+                                border: 2px solid #f4f4f4;
                             }
 
                             .vn-photo-caption{
@@ -554,7 +726,7 @@ body{
                                     }
 
                                     .vn-photo-user-impression-data-time-container{
-                                        width: 100%;
+                                        width: auto;
                                     }
 
                                         .vn-photo-user-impression-data-time-style{
@@ -564,8 +736,21 @@ body{
                                             color: #565656;
                                         }
 
+                                        .vn-photo-user-impression-data-icon{
+                                            display: inline-block;
+                                            flex-grow: 2;
+                                            margin-left: 5px;
+                                        }
+
+                                        .vn-photo-user-impression-data-icon-container{
+                                            width: auto;
+                                            line-height: 20px;
+                                            text-align: right;
+                                        }
+
                                         .vn-photo-user-impression-data-fill{
                                             display: block;
+                                            margin-bottom: 5px;
                                         }
     
                                         .vn-photo-user-impression-data-fill-container{
@@ -578,6 +763,187 @@ body{
                                                 font-weight: 600;
                                                 color: #343434;
                                             }
+
+                                        .vn-photo-commentar-love{
+                                            display: inline-block;
+                                            margin-right: 3px;
+                                        }
+
+                                        .vn-photo-commentar-love-container{
+                                            width: auto;
+                                            height: 20px;
+                                        }
+
+                                        .vn-photo-commentar-love-style{
+                                            width: auto;
+                                            padding: 0 3px;
+                                            height: 20px;
+                                            max-height: 20px;
+                                            text-align: center;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            background: none;
+                                            color: #636388;
+                                            border: none;
+                                        }
+            
+                                        .vn-photo-commentar-love-style:hover .commentar-react-icon-love-icon{
+                                            color: none;
+                                            -webkit-text-stroke-color: #fd3560;
+                                            background: none;
+                                        }
+            
+                                        .commentar-react-icon-love-icon{
+                                            margin-right: 5px;
+                                            background: none;
+                                            color: transparent;
+                                            -webkit-text-stroke-width: 2px;
+                                            -webkit-text-stroke-color: #636388;
+                                        }
+            
+                                        .commentar-react-icon-love-icon.active-react{
+                                            color: #fd3560;
+                                            -webkit-text-stroke-width: 2px;
+                                            -webkit-text-stroke-color: #fd3560;
+                                            background: none;
+                                        }
+
+                                        .vn-photo-commentar-pinned{
+                                            display: none;
+                                            margin-right: 3px;
+                                        }
+
+                                        .vn-photo-commentar-pinned.active-content{
+                                            display: inline-block;
+                                            margin-right: 3px;
+                                        }
+
+                                        .vn-photo-commentar-pinned-container{
+                                            width: auto;
+                                            height: 20px;
+                                        }
+
+                                        .vn-photo-commentar-pinned-style{
+                                            width: auto;
+                                            padding: 0 3px;
+                                            height: 20px;
+                                            max-height: 20px;
+                                            text-align: center;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            background: none;
+                                            color: #636388;
+                                            border: none;
+                                        }
+
+                                        .vn-photo-commentar-3dot{
+                                            display: inline-block;
+                                        }
+                                        
+                                        .vn-photo-commentar-3dot-container{
+                                            width: auto;
+                                            height: 20px;
+                                        }
+
+                                        .vn-photo-commentar-3dot-style{
+                                            width: auto;
+                                            padding: 0 3px;
+                                            height: 20px;
+                                            max-height: 20px;
+                                            text-align: center;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            background: none;
+                                            color: #636388;
+                                            border: none;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content{
+                                            display: none;
+                                            position: absolute;
+                                            margin-top: 5px;
+                                            margin-left: -70px;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content.active-content{
+                                            display: block;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content-container{
+                                            width: 80px;
+                                            height: auto;
+                                            padding: 10px 0;
+                                            border-radius: 5px;
+                                            background: #fff;
+                                            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+                                            text-align: center;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content-style{
+                                            display: block;
+                                            width: 100%;
+                                            height: 22px;
+                                            line-height: 22px;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: #343434;
+                                            cursor: pointer;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content-style.un-active-content{
+                                            display: none;
+                                        }
+
+
+                                        .photo-unpinned-user-impression-data-icon-content-style{
+                                            display: none;
+                                            width: 100%;
+                                            height: 22px;
+                                            line-height: 22px;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: #343434;
+                                            cursor: pointer;
+                                        }
+
+                                        .photo-unpinned-user-impression-data-icon-content-style.active-content{
+                                            display: block;
+                                        }
+
+                                        .photo-report-user-impression-data-icon-content-style{
+                                            display: block;
+                                            width: 100%;
+                                            height: 22px;
+                                            line-height: 22px;
+                                            font-family: open sans;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: #343434;
+                                            cursor: pointer;
+                                        }
+
+                                        .photo-pinned-user-impression-data-icon-content-style:hover{
+                                            background: #efefef;
+                                        }
+
+                                        .photo-unpinned-user-impression-data-icon-content-style:hover{
+                                            background: #efefef;
+                                        }
+
+                                        .photo-report-user-impression-data-icon-content-style:hover{
+                                            background: #efefef;
+                                        }
 
 
 
@@ -1085,6 +1451,26 @@ body{
                             color: #565656;
                         }
 
+                    .vn-photo-pinned-user-impression-data-icon{
+                        display: inline-block;
+                        flex-grow: 2;
+                        margin-left: 5px;
+                    }
+
+                    .vn-photo-pinned-user-impression-data-icon-container{
+                        width: auto;
+                    }
+
+                        .vn-photo-pinned-user-impression-data-icon-style{
+                            font-family: open sans;
+                            font-size: 10px;
+                            font-weight: 600;
+                            color: #565656;
+                            border: none;
+                            background: none;
+                            cursor: pointer;
+                        }
+
                     .vn-photo-pinned-user-impression-pinned-icon{
                         display: inline-block;
                         flex-grow: 2;
@@ -1093,6 +1479,7 @@ body{
 
                     .vn-photo-pinned-user-impression-pinned-icon-container{
                         width: auto;
+                        float: right;
                         text-align: right;
                     }
 
@@ -1117,24 +1504,4 @@ body{
                             }
 
 
-                            .active-react-icon-map{
-                                color: #fd3560;
-                                -webkit-text-stroke-width: 2px;
-                                -webkit-text-stroke-color: #fd3560;
-                                background: #ffdfe6;
-                                border: 2px solid #ffdfe6;
-                            }
-                            .active-react-icon-pinned{
-                                color: #fd3560;
-                                -webkit-text-stroke-width: 2px;
-                                -webkit-text-stroke-color: #fd3560;
-                                background: #ffdfe6;
-                                border: 2px solid #ffdfe6;
-                            }
-                            .active-react-icon-comment{
-                                color: #fd3560;
-                                -webkit-text-stroke-width: 2px;
-                                -webkit-text-stroke-color: #fd3560;
-                                background: #ffdfe6;
-                                border: 2px solid #ffdfe6;
-                            }
+                            

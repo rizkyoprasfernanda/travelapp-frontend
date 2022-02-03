@@ -1,11 +1,12 @@
 $(document).ready(function (e) {
-	$(".react-icon-love").click(function (e) {
+	$(".navigation-love-icon").click(function (e) {
 		e.preventDefault();
-		if ($(this).hasClass("active-react-icon-love")) {
-			$(this).removeClass("active-react-icon-love");
-		} else {
-			$(this).addClass("active-react-icon-love");
-		}
+		$(".react-icon-love-icon").toggleClass("active-react");
+	});
+
+	$(".commentar-love-icon").click(function (e) {
+		e.preventDefault();
+		$(".commentar-react-icon-love-icon").toggleClass("active-react");
 	});
 
 	$(".react-icon-bookmark").click(function (e) {
@@ -18,12 +19,14 @@ $(document).ready(function (e) {
 	});
 
 	$(".share-button").click(function (e) {
+		$(".dot-button").removeClass("active-content");
 		$(this).toggleClass("active-content");
 		$(".vn-photo-share-content").toggleClass("active-content");
 		$(".vn-photo-dot-content").removeClass("active-content");
 	});
 
 	$(".dot-button").click(function (e) {
+		$(".share-button").removeClass("active-content");
 		$(this).toggleClass("active-content");
 		$(".vn-photo-dot-content").toggleClass("active-content");
 		$(".vn-photo-share-content").removeClass("active-content");
@@ -31,6 +34,26 @@ $(document).ready(function (e) {
 
 	$("#vn-photo-commentar-emoticon-button").click(function (e) {
 		$(".vn-commentar-textbox-emoticon-content").toggleClass("active-content");
+	});
+
+	$(".3dot-comment").click(function (e) {
+		$(".photo-pinned-user-impression-data-icon-content").toggleClass("active-content");
+	});
+
+	$(".commentar-pinned-icon").click(function (e) {
+		$(".vn-photo-commentar-pinned").toggleClass("active-content");
+		$(".photo-pinned-user-impression-data-icon-content").removeClass("active-content");
+		$(".photo-pinned-user-impression-data-icon-content-style").toggleClass("un-active-content");
+		$(".photo-unpinned-user-impression-data-icon-content-style").toggleClass("active-content");
+		$(".vn-photo-user-impression").toggleClass("active-pinned");
+	});
+
+	$(".commentar-unpinned-icon").click(function (e) {
+		$(".vn-photo-commentar-pinned").removeClass("active-content");
+		$(".photo-pinned-user-impression-data-icon-content").removeClass("active-content");
+		$(".photo-pinned-user-impression-data-icon-content-style").removeClass("un-active-content");
+		$(".photo-unpinned-user-impression-data-icon-content-style").removeClass("active-content");
+		$(".vn-photo-user-impression").removeClass("active-pinned");
 	});
 
 	$(".react-icon-comment").click(function (e) {
