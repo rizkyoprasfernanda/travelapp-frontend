@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tes upload</title>
+    <link rel="stylesheet" href="../css/upload.css" />
+    <link rel="stylesheet" href="../font-awesome/css/all.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/upload.js"></script>
+</head>
+<body>
+    <div class="vn-upload-background">
+        <div class="vn-upload-content">
+            <div class="vn-upload-content-container">
+                <div class="vn-upload-content-left">
+                    <div class="vn-upload-content-left-container">
+                        <div class="vn-upload-data">
+                            <div class="vn-upload-data-container">
+                                <img id="imagePreview" class="vn-upload-image-preview" src="#" alt=" ">
+                                <div class="vn-upload-data-box">
+                                    <div class="vn-upload-data-box-container">
+                                        <div class="vn-upload-data-word">
+                                            <div class="vn-upload-data-word-container">
+                                                <div class="vn-upload-data-word-style">
+                                                    Drop your image here,
+                                                    <a class="vn-color-text">or</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vn-upload-data-file-input">
+                                            <div class="vn-upload-data-file-input-container">
+                                                <div class="vn-upload-data-input camera-input">
+                                                    <div class="vn-upload-data-input-container">
+                                                        <button class="vn-upload-data-input-button-camera"><i class="fas fa-camera"></i></button>
+                                                        <div class="vn-upload-data-input-button-hover-content-camera">
+                                                            Take photo
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vn-upload-data-input galery-input">
+                                                    <div class="vn-upload-data-input-container">
+                                                        <label for="imageUpload" class="vn-upload-data-input-button-galery"><i class="fas fa-image"></i></label>
+                                                        <div class="vn-upload-data-input-button-hover-content-galery">
+                                                            Add from galery
+                                                        </div>
+                                                        <input id="imageUpload" onchange="readURL(this)" style="display:none;" type="file">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vn-upload-data-file-input-bottom">
+                                    <div class="vn-upload-data-file-input-bottom-container">
+                                        <div class="vn-upload-data-file-input-bottom-left">
+                                            <div class="vn-upload-data-file-input-bottom-left-container">
+                                                <div class="vn-upload-data-word-bottom">
+                                                    <div class="vn-upload-data-word-bottom-container">
+                                                        <div class="vn-upload-data-word-bottom-style">
+                                                            Drop your image here,
+                                                            <a class="vn-color-text">or</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vn-upload-data-file-input-bottom-right">
+                                            <div class="vn-upload-data-file-input-bottom-right-container">
+                                                <div class="vn-upload-data-file-input-bottom-button input-camera-bottom">
+                                                    <div class="vn-upload-data-file-input-bottom-button-container">
+                                                        <button class="vn-upload-data-file-input-bottom-button-style"><i class="fas fa-camera"></i></button>
+                                                        <div class="vn-upload-data-file-input-bottom-button-style-camera-hover">
+                                                            Take photo
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vn-upload-data-file-input-bottom-button input-galery-bottom">
+                                                    <div class="vn-upload-data-file-input-bottom-button-container">
+                                                        <label for="imageUpload" class="vn-upload-data-file-input-bottom-button-label"><i class="fas fa-image"></i></label>
+                                                        <div class="vn-upload-data-file-input-bottom-button-style-galery-hover">
+                                                            Add from galery
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vn-upload-content-right">
+                    <div class="vn-upload-content-right-container">
+                        <div class="vn-upload-description">
+                            <div class="vn-upload-description-container">
+                                <div class="vn-upload-tittle">
+                                    <div class="vn-upload-tittle-container">
+                                        <a class="vn-upload-tittle-style">Upload</a>
+                                    </div>
+                                </div>
+
+                                <div class="vn-upload-input-box">
+                                    <div class="vn-upload-input-box-container">
+                                        <div class="vn-upload-input-box-left">
+                                            <div class="vn-upload-input-box-left-container">
+                                                <div class="vn-upload-profile-author">
+                                                    <div class="vn-upload-profile-author-container">
+                                                        <img src="../images/profile5.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="vn-upload-icon">
+                                                    <div class="vn-upload-icon-container">
+                                                        <button class="vn-upload-icon-emoticon-button" name="submit"><i class="fas fa-smile"></i></button>
+                                                        <div class="vn-upload-icon-emoticon-content">
+                                                            <div class="vn-upload-icon-emoticon-content-container">
+                                                                <div class="vn-upload-icon-emoticon">
+                                                                    <span onclick="injectEmojisToList(this)">😃</span>
+                                                                    <span onclick="injectEmojisToList(this)">😁</span>
+                                                                    <span onclick="injectEmojisToList(this)">😅</span>
+                                                                    <span onclick="injectEmojisToList(this)">🤣</span>
+                                                                    <span onclick="injectEmojisToList(this)">😉</span>
+                                                                    <span onclick="injectEmojisToList(this)">😊</span>
+                                                                    <span onclick="injectEmojisToList(this)">😇</span>
+                                                                    <span onclick="injectEmojisToList(this)">😲</span>
+                                                                    <span onclick="injectEmojisToList(this)">😳</span>
+                                                                    <span onclick="injectEmojisToList(this)">😥</span>
+                                                                    <span onclick="injectEmojisToList(this)">🥰</span>
+                                                                    <span onclick="injectEmojisToList(this)">😍</span>
+                                                                    <span onclick="injectEmojisToList(this)">😘</span>
+                                                                    <span onclick="injectEmojisToList(this)">😜</span>
+                                                                    <span onclick="injectEmojisToList(this)">🤫</span>
+                                                                    <span onclick="injectEmojisToList(this)">🤤</span>
+                                                                    <span onclick="injectEmojisToList(this)">😈</span>
+                                                                    <span onclick="injectEmojisToList(this)">😻</span>
+                                                                    <span onclick="injectEmojisToList(this)">🙈</span>
+                                                                    <span onclick="injectEmojisToList(this)">🙊</span>
+                                                                    <span onclick="injectEmojisToList(this)">💘</span>
+                                                                    <span onclick="injectEmojisToList(this)">💕</span>
+                                                                    <span onclick="injectEmojisToList(this)">💞</span>
+                                                                    <span onclick="injectEmojisToList(this)">💌</span>
+                                                                    <span onclick="injectEmojisToList(this)">💑</span>
+                                                                    <span onclick="injectEmojisToList(this)">💐</span>
+                                                                    <span onclick="injectEmojisToList(this)">🌹</span>
+                                                                    <span onclick="injectEmojisToList(this)">🎀</span>
+                                                                    <span onclick="injectEmojisToList(this)">🍭</span>
+                                                                    <span onclick="injectEmojisToList(this)">💃</span>
+                                                                    <span onclick="injectEmojisToList(this)">🏄</span>
+                                                                    <span onclick="injectEmojisToList(this)">🛀</span>
+                                                                    <span onclick="injectEmojisToList(this)">🏩</span>
+                                                                    <span onclick="injectEmojisToList(this)">👑</span>
+                                                                    <span onclick="injectEmojisToList(this)">🦁</span>
+                                                                    <span onclick="injectEmojisToList(this)">🦄</span>
+                                                                    <span onclick="injectEmojisToList(this)">🎠</span>
+                                                                    <span onclick="injectEmojisToList(this)">🧸</span>
+                                                                    <span onclick="injectEmojisToList(this)">💍</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vn-upload-input-box-right">
+                                            <div class="vn-upload-input-box-right-container">
+                                                <div class="vn-upload-text-area">
+                                                    <div class="vn-upload-text-area-container">
+                                                        <textarea onkeyup="textAreaAdjust(this)-removethis" id="vn-upload-text-area-style" class="vn-upload-text-area-style" placeholder="Share Your Experience"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vn-upload-input-box">
+                                    <div class="vn-upload-input-box-container">
+                                        <div class="vn-upload-input-box-left">
+                                            <div class="vn-upload-input-box-left-container">
+                                                <div class="vn-upload-icon">
+                                                    <div class="vn-upload-icon-container">
+                                                        <button class="vn-upload-icon-location-button"><i class="fas fa-map-marker-alt"></i></button>
+                                                        <div class="vn-upload-icon-location-content">
+                                                            <div class="vn-upload-icon-location-content-container">
+                                                                <div class="vn-upload-icon-location">
+                                                                    Maps Avaible Soon
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vn-upload-input-box-right">
+                                            <div class="vn-upload-input-box-right-container">
+                                                <div class="vn-upload-input-location">
+                                                    <div class="vn-upload-input-location-container">
+                                                        <input class="vn-upload-input-location-style" type="text" name="text" placeholder="Make everyone known the location of this place">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vn-upload-button-box">
+                                    <div class="vn-upload-button-box-container">
+                                        <div class="vn-upload-button">
+                                            <div class="vn-upload-button-container">
+                                                <button class="vn-upload-button-style upload-button">Upload</button>
+                                            </div>
+                                        </div>
+                                        <div class="vn-upload-button">
+                                            <div class="vn-upload-button-container">
+                                                <button class="vn-upload-button-style">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                         
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

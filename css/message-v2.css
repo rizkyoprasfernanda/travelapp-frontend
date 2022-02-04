@@ -661,13 +661,7 @@
                                 outline: none;            
                             }
                     
-                                .vn-message-textbox-container button{
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 0 ;
-                                    height: 40px;
-                                }    
-                            
+                                
                                     .vn-message-textbox-emoticon-button{
                                         font-size: 16px;
                                         cursor: pointer;
