@@ -1,0 +1,472 @@
+*{
+    margin: 0 auto;
+    box-sizing: inherit;
+}
+
+.vn-container{
+    max-width: 1000px;
+}
+
+.vn-sign-up-page{
+    width: 1000px;
+    padding-top: 70px;
+    display: flex;
+    height: auto;
+    max-height: 550px;
+}
+
+    .vn-sign-up-page-left{
+        display: block;
+        float: left;
+        max-width: 500px;
+        width: 500px;
+        max-height: 600px;
+        padding-top: 25px;
+    }
+
+        .vn-sign-up-page-left-box{
+            width: 380px;
+            max-width: 380px;
+        }
+
+        .vn-sign-up-logo{
+            margin-top: 20px;
+        }
+
+            .vn-sign-up-logo-link{    
+                font-family: open sans;
+                color: #343434;
+                font-size: 23px;
+                font-weight: 5000;
+                text-decoration: none;
+            }
+        
+        .vn-sign-up-word{
+            margin-top: 25px;
+        }
+
+            .vn-sign-up-word-text{
+                font-family: open sans;
+                color: #343434;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+        .vn-sign-up-verification{
+            margin-top: 25px;
+        }
+
+            .vn-sign-up-verification-text{
+                font-family: open sans;
+                color: #343434;
+                font-size: 13px;
+            }
+
+            .vn-sign-up-verification-code input[type="text"]{
+                margin-top: 15px;
+                width: 350px;
+                border: none;
+                height: 35px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 12px;
+                color: #343434;
+                border-radius: 5px;
+                background: #f4f4f4;
+                text-decoration: none;
+                outline: none;
+            }
+
+            .vn-sign-up-email{            
+                margin-top: 15px;
+            }
+    
+                .vn-sign-up-email-text{
+                    font-family: open sans;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+    
+                .vn-sign-up-email input[type="text"]{
+                    margin-top: 5px;
+                    width: 350px;
+                    border: none;
+                    height: 35px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;
+                    outline: none;
+                }
+    
+            .vn-sign-up-password{           
+                margin-top: 15px;
+            }
+    
+                .vn-sign-up-password-text{
+                    font-family: open sans;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+    
+                .vn-sign-up-password input[type="password"]{
+                    margin-top: 5px;
+                    width: 350px;
+                    border: none;
+                    height: 35px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;
+                    outline: none;
+                }
+
+
+            .vn-sign-up-reenter-password{            
+                margin-top: 15px;
+            }
+
+            .vn-sign-up-reenter-password-text{
+                font-family: open sans;
+                color: #454545;
+                font-size: 13px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .vn-sign-up-reenter-password input[type="password"]{
+                margin-top: 5px;
+                width: 350px;
+                border: none;
+                height: 35px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 12px;
+                color: #343434;
+                border-radius: 5px;
+                background: #f4f4f4;
+                text-decoration: none;
+                outline: none;
+            }
+
+            .vn-sign-up-name{            
+                margin-top: 15px;
+            }
+    
+                .vn-sign-up-name-text{
+                    font-family: open sans;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-bottom: 5px
+                }
+    
+                .vn-sign-up-name input[type="text"]{
+                    margin-top: 5px;
+                    width: 350px;
+                    border: none;
+                    height: 35px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;
+                    outline: none;
+                }
+
+            .vn-sign-up-gender{            
+                margin-top: 15px;
+            }
+    
+                .vn-sign-up-gender-text{
+                    font-family: open sans;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+    
+                .vn-sign-up-gender input[type="text"]{
+                    margin-top: 10px;
+                    width: 350px;
+                    border: none;
+                    height: 35px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;
+                }
+
+            .vn-sign-up-birthday{
+                max-width: 380px;
+                margin-top: 15px;
+            }
+    
+                .vn-sign-up-birthday-text{
+                    font-family: open sans;
+                    color: #454545;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+    
+                .vn-sign-up-birthday input[type="date"]{
+                    margin-top: 10px;
+                    width: 350px;
+                    border: none;
+                    height: 35px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    border-radius: 5px;
+                    background: #f4f4f4;
+                    text-decoration: none;
+                }
+
+            .vn-sign-up-agree-terms{
+                margin-top: 15px;
+                display: flex;
+            }
+
+                .vn-sign-up-agree{
+                    display: flex;
+                    flex-grow: 0;
+                }
+
+                    .vn-sign-up-agree-check-box{
+                        text-decoration: none;
+                    }
+
+                    .vn-sign-up-agree-text{
+                        font-family: open sans;
+                        font-size: 12px;
+                        color: #343434;
+                        padding: 0 5px 0 5px;
+                    }
+
+                .vn-sign-up-terms{
+                    flex-grow: 1;
+                }
+
+                    .vn-sign-up-terms-link{
+                        float: left;
+                        font-family: open sans;
+                        font-size: 12px;
+                        color: #454545;
+                        text-decoration: none;
+                    }
+                
+            .vn-sign-up-skip-step{
+                    margin-top: 15px;
+                    max-width: 380px;
+                }
+
+                    .vn-sign-up-skip-step-text{
+                        font-family: open sans;
+                        font-size: 13px;
+                        color: #343434;
+                        padding: 0 5px 0 5px;
+                    }
+            
+            .vn-sign-up-button-box{
+                margin-top: 15px;
+            }
+
+                .vn-sign-up-button{
+                        width: 346px;
+                        height: 31px;
+                        color: #fff;
+                        border: 2px solid #4548ff;
+                        background: #4548ff;
+                        border-radius: 5px;
+                        padding: 0 15px 0 15px;
+                        font-family: open sans;
+                        font-size: 13px;
+                        text-decoration: none;
+                        cursor: pointer;
+                }
+
+                .vn-sign-up-button:hover{
+                    color: #4548ff;
+                    background: none;
+                    border: 2px solid #efefef;
+                }
+
+            .vn-sign-up-verify-button-box{
+                margin-top: 15px;
+            }
+
+                .vn-sign-up-verify-button{
+                        width: 346px;
+                        height: 31px;
+                        border: 2px solid #4548ff;
+                        color: #fff;
+                        background: #4548ff;
+                        border-radius: 5px;
+                        padding: 0 15px 0 15px;
+                        font-family: open sans;
+                        font-size: 13px;
+                        text-decoration: none;
+                        cursor: pointer;
+                }
+
+                .vn-sign-up-verify-button:hover{
+                    color: #4548ff;
+                    background: none;
+                    border: 2px solid #efefef;
+                }
+
+            .vn-sign-up-continue-button-box{
+                margin-top: 15px;
+                max-width: 380px;
+            }
+
+                .vn-sign-up-continue-button{
+                    width: 346px;
+                    height: 31px;
+                    border: 2px solid #4548ff;
+                    color: #fff;
+                    background: #4548ff;
+                    border-radius: 5px;
+                    padding: 0 15px 0 15px;
+                    font-family: open sans;
+                    font-size: 13px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .vn-sign-up-continue-button:hover{
+                    color: #4548ff;
+                    background: none;
+                    border: 2px solid #efefef;
+                }
+
+            .vn-sign-up-login{
+                margin-top: 15px;
+            }
+
+                .vn-sign-up-login-text{
+                    font-family: open sans;
+                    font-size: 13px;
+                    color: #343434;
+                }
+
+                .vn-sign-up-login-text-link{
+                    font-family: open sans;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #4548ff;
+                    text-decoration: none;
+                }
+
+            .vn-sign-up-veryfication-not-send{
+                margin-top: 15px;
+            }
+
+                .vn-sign-up-veryfication-not-send-text{
+                    font-family: open sans;
+                    font-size: 13px;
+                    color: #343434;
+                }
+
+                .vn-sign-up-veryfication-not-send-text-link{
+                    font-family: open sans;
+                    font-size: 13px;
+                    color: #4548ff;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+
+            .vn-sign-up-copyright{
+                margin-top: 10px;
+                max-width: 380px;
+            }
+
+                .vn-sign-up-copyright-text{
+                    font-family: open sans;
+                    font-size: 11px;
+                    color: #343434;
+                }
+
+
+    .vn-sign-up-page-right{
+        max-height: 600px;
+        width: 500px;
+        width: auto;
+        float: left;
+    }
+
+        .vn-sing-up-page-right-box{
+            width: 500px;
+            height: auto;
+            width: auto;
+            display: flex;
+          }
+          
+          .vn-sign-up-page-right-image{
+            margin-right: 70px;
+            margin-left: 30px;
+            width: 400px;
+            justify-content: flex-start;
+            display: block;
+          }
+            
+          .vn-sign-up-image{
+            display: block;
+            position: relative;
+            border: none;
+            margin: 20px 0;
+            width: 100%;
+            height: 500px;
+          }
+          
+          .vn-sign-up-image img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+          }
+
+
+          .vn-sign-up-image-background{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: none;
+            top: 0;
+            left: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.4);
+          }
+          
+          
+          .vn-sign-up-image-text{
+            position: absolute;
+            z-index: 55;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+
+          .vn-sign-up-image-text-a{
+              font-family: montserrat;
+              font-size: 45px;
+              font-weight: 700;
+              color: #fff;
+              opacity: 1;
+          }

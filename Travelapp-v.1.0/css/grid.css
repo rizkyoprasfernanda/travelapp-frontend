@@ -1,5 +1,6 @@
 .vn-grid-container {
 	display: block;
+	max-width: 1200px;
 }
 
 .vn-grid {
@@ -134,7 +135,7 @@
 
 .vn-info-bottom-left {
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	left: 10px;
 	z-index: 51;
 }
@@ -180,7 +181,7 @@
 
 .vn-info-bottom-right {
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	right: 10px;
 	z-index: 51;
 }

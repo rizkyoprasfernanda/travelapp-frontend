@@ -1,0 +1,424 @@
+*{
+    margin: 0 auto;
+}
+
+.margin-icon{
+    margin-right: 5px;
+}
+
+.vn-header{     /*-----Header-----*/
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf ;
+    z-index: 99;
+}
+
+.vn-header-container{
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    height: 70px;
+    max-height: 70px;
+}
+
+    .vn-header-left{
+        display: block;
+        flex-grow: 0;
+    }
+
+    .vn-header-left-container{
+        display: block;
+        flex-grow: 0;
+        width: 200px;
+        max-width: 200px;
+        height: 100%;
+    }
+
+        .vn-logo{
+            display: block;
+        }
+
+        .vn-logo-container{
+            width: auto;
+            height: 70px;
+            line-height: 70px
+        }
+
+        .vn-logo-style{
+            font-family: open sans;
+            font-size: 17px;
+            font-weight: 500;
+            color: #343434;
+            text-decoration: none;
+        }
+
+    .vn-header-center{
+        display: block;
+        flex-grow: 1;
+    }
+
+    .vn-header-center-container{
+        width: 820px;
+        height: 100%;
+        float: right;
+    }
+
+        .vn-main-search{
+            display: block;
+            position: relative;
+            float: right;
+        }
+
+        .vn-main-search-container{
+            width: 320px;
+            height: 100%;
+            line-height: 70px;
+        }
+
+        .vn-main-search-container input[type="search"]{
+            width: 300px;
+            height: 40px;
+            padding: 0 15px;
+            font-family: open sans;
+            font-size: 12px;
+            font-weight: 600;
+            color: #343434;
+            border-radius: 5px;
+            border: none;
+            background: #f4f4f4;
+            text-decoration: none;
+            outline: none;             
+        }
+
+        .vn-main-search button{
+            position: absolute;
+            right: 35px;
+            top: 15px ;
+            height: 40px;
+            cursor: pointer;
+            color: #9d9dc7;
+            border: none;
+            background: none;
+            outline: none;
+        } 
+
+        .vn-main-search button:hover{
+            color: #6c6c8a;
+        } 
+
+        .vn-header-right{
+            display: block;
+            flex-grow: 2;
+        }
+
+        .vn-header-right-container{
+            width: 180px;
+            max-width: 180px;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            float: right;
+        }
+
+            .vn-login-button-before-login{
+                display: block;
+                float: right;
+            }
+
+            .vn-login-button-before-login-container{
+                width: 80px;
+                height: 100%;
+                line-height: 70px;
+                text-align: right;
+            }
+
+            .vn-login-button-before-login-style{
+                width: 80px;
+                height: 35px;
+                line-height: 30px;
+                padding: 0 10px;
+                text-align: center;
+                font-family: open sans;
+                font-size: 13px;
+                font-weight: 600;
+                color: #6c6c8a;
+                background: none;
+                border: none;
+                outline: none;
+                text-decoration: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .vn-login-button-link-style{
+                color: #6c6c8a;
+                text-decoration: none;
+            }
+
+            .vn-login-button-before-login-style:hover .vn-login-button-link-style{
+                color: #5153eb;
+                border-bottom: 3px solid #5153eb;
+            }
+
+            .before-login-button-after{
+                color: none;
+                background: #4548ff;
+            }
+
+            .before-login-button-after-link{
+                color: #fff;
+            }
+
+            .before-login-button-after:hover{
+                color: #fff;
+                background: #fff;
+                border: 2px solid #efefef;
+            }
+
+            .before-login-button-after:hover .before-login-button-after-link{
+                color: #5153eb;
+                border-bottom: none;
+            }
+
+            .vn-login-button-3dot-button{
+                display: block;
+                position: relative;
+            }
+
+            .vn-login-button-3dot-button-container{
+                width: 20px;
+                height: 70px;
+                line-height: 70px;
+            }
+
+            .vn-login-button-3dot-button-style{
+                text-align: right;
+                width: 20px;
+                height: 40px;
+                font-size: 14px;
+                color: #6c6c8a;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .vn-login-button-3dot-button-style.active-content{
+                color: #4548ff;
+            }
+
+            .vn-login-button-3dot-button-style:hover{
+                color: #4548ff;
+            }
+
+            .vn-login-button-3dot-content.active-content{
+                display: block;
+            }
+
+            .vn-login-button-3dot-content{
+                display: none;
+                position: absolute;
+                z-index: 100;
+                right: 0;
+                top: 63px;
+            }
+
+            .vn-login-button-3dot-content-container{
+                width: 120px;
+                height: auto;
+                padding: 15px 0;
+                border-radius: 10px;
+                background: #fff;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+            }
+
+            .vn-login-button-3dot-content-style{
+                display: block;
+                line-height: 35px;
+                text-align: center;
+                font-family: open sans;
+                font-size: 13px;
+                font-weight: 600;
+                color: #343434;
+                text-decoration: none;
+            }
+
+            .vn-login-button-3dot-content-style:hover{
+                background: #efefef;
+            }
+
+.vn-header-wrapper{
+    width: 100%;
+    height: 70px;
+}
+
+.vn-section-top{ /*--------Section----------*/
+    display: block;
+}
+                
+.vn-section-top-container{
+    width: 100%;
+    height: 300px;
+    background-image: url("../../image/img6-crop.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.vn-section-top-container-overlay{
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+    .vn-section-main-search{
+        display: block;
+    }
+
+    .vn-section-main-search-container{
+        width: 600px;
+        height: 300px;
+        max-width: 600px;
+        max-height: 300px;
+    }
+
+        .vn-section-main-search-word{
+            display: block;
+            padding-top: 60px;
+        }
+
+        .vn-section-main-search-word-container{
+            width: 600px;
+            height: 100px;
+        }
+
+        .vn-section-main-search-word-style{
+            font-family: open sans;
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .vn-section-main-search-engine{
+            margin: 20px 0;
+            display: block;
+        }
+
+        .vn-section-main-search-engine-container{
+            width: 600px;
+            height: 50px;
+            position: relative;
+        }
+
+        .vn-section-main-search-engine-container input[type="search"]{
+            width: 600px;
+            height: 45px;
+            padding: 0 15px;
+            font-family: open sans;
+            font-size: 12px;
+            font-weight: 600;
+            color: #343434;
+            border-radius: 5px;
+            border: none;
+            background: #f4f4f4;
+            text-decoration: none;
+            outline: none;             
+        }
+
+        .vn-section-main-search-engine-button{
+            position: absolute;
+            right: 15px;
+            top: 0 ;
+            height: 45px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #9d9dc7;
+            border: none;
+            background: none;
+            outline: none;
+        } 
+    
+.vn-section-bottom{
+    display: block;
+}
+
+.vn-section-bottom-container{
+    width: 100%;
+}
+
+.vn-discover-before-login{
+    display: block;
+    padding: 40px
+}
+
+.vn-discover-before-login-container{
+    max-width: 1200px;
+}
+
+    .vn-discover-before-login-tittle{
+        display: block;
+        padding-left: 10px;
+    }
+
+    .vn-discover-before-login-tittle-container{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .vn-discover-before-login-tittle-style{
+        font-family: open sans;
+        font-size: 18px;
+        font-weight: 600;
+        color: #4548ff;
+    }
+
+    .vn-discover-before-login-tittle-style-blue{
+        color: #343434;
+    }
+
+    .vn-discover-before-login-item-box{
+        display: block;
+        padding-left: 10px;
+    }
+
+    .vn-discover-before-login-item-box-container{
+        width: 100%;
+    }
+
+        .vn-discover-item{
+            display: inline-block;
+            margin-right: 3px;
+        }
+
+        .vn-discover-item-container{
+            width: auto;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 10px;
+            border-radius: 5px;
+            background: none;
+            border: 2px solid #efefef;
+        }
+
+        .vn-discover-item-container:hover{
+            background: #ddddff;
+            border: 2px solid #ddddff;
+        }
+
+        .vn-discover-item-container:hover .vn-discover-item-style{
+            color: #4548ff;
+        }
+
+        .vn-discover-item-style{
+            font-family: open sans;
+            font-size: 13px;
+            font-weight: 600;
+            color: #6c6c8a;
+            cursor: pointer;
+            text-decoration: none;
+        }

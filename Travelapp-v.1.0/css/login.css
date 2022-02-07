@@ -1,0 +1,349 @@
+*{
+    margin: 0 auto;
+    box-sizing: inherit;
+}
+
+.vn-container{
+    max-width: 1000px;
+}
+
+.vn-login-page{
+    width: 1000px;
+    padding-top: 70px;
+    display: flex;
+    height: auto;
+    max-height: 550px;
+}
+
+    .vn-login-page-left{
+        display: block;
+        float: left;
+        max-width: 500px;
+        width: 500px;
+        max-height: 600px;
+        padding-top: 25px;
+    }
+
+        .vn-login-page-left-box{
+            width: 380px;
+            max-width: 380px;
+        }
+
+        .vn-login-logo{
+            margin-top: 20px;
+        }
+
+            .vn-login-logo-link{    
+                font-family: open sans;
+                color: #343434;
+                font-size: 23px;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        
+        .vn-login-word{
+            margin-top: 25px;
+        }
+
+            .vn-login-word-text{
+                font-family: open sans;
+                color: #343434;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+        .vn-login-username{            
+            margin-top: 15px;
+        }
+
+            .vn-login-username-text{
+                font-family: open sans;
+                color: #454545;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .vn-login-username input[type="text"]{
+                margin-top: 10px;
+                width: 350px;
+                border: none;
+                height: 35px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 12px;
+                color: #343434;
+                border-radius: 5px;
+                background: #f4f4f4;
+                text-decoration: none;
+                outline: none;
+            }
+
+        .vn-login-password{           
+            margin-top: 15px;
+        }
+
+            .vn-login-password-text{
+                font-family: open sans;
+                color: #454545;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .vn-login-password input[type="password"]{
+                margin-top: 10px;
+                width: 350px;
+                border: none;
+                height: 35px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 12px;
+                color: #343434;
+                border-radius: 5px;
+                background: #f4f4f4;
+                text-decoration: none;
+                outline: none;
+            }
+
+        .vn-login-remember-and-forgot{
+            margin-top: 15px;
+            display: flex;
+        }
+
+            .vn-login-remember{
+                display: flex;
+                flex-grow: 0;
+            }
+
+                .vn-login-remember-check-box{
+                    text-decoration: none;
+                }
+
+                .vn-login-remember-text{
+                    font-family: open sans;
+                    font-size: 12px;
+                    color: #343434;
+                    padding: 0 5px 0 5px;
+                }
+
+            .vn-login-forget-password{
+                justify-content: flex-end;
+                flex-grow: 1;
+            }
+
+                .vn-login-forget-password-link{
+                    float: right;
+                    font-family: open sans;
+                    font-size: 12px;
+                    font-weight: 500;
+                    border-bottom: 2px solid transparent;
+                    color: #4548ff;
+                    text-decoration: none;
+                }
+
+                .vn-login-forget-password-link:hover{
+                    border-bottom: 2px solid #4548ff;
+                }
+        
+
+        .vn-login-button-box{
+            margin-top: 15px;
+        }
+
+            .vn-login-button{
+                width: 346px;
+                height: 31px;
+                border: 2px solid #4548ff;
+                color: #fff;
+                background: #4548ff;
+                border-radius: 5px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 13px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .vn-login-button:hover{
+                color: #4548ff;
+                background: none;
+                border: 2px solid #efefef;
+            }
+
+
+        .vn-login-another-way{
+            margin-top: 15px;
+            display: flex;
+        }
+
+            .vn-login-another-way-icon{
+                padding-right: 4px;
+                font-family: open sans;
+                font-size: 13px;
+                color: #343434;
+            }
+
+            .vn-login-another-way-line{
+                margin-top: 10px;
+                width: 125px;
+                border-top: 2px solid #efefef;
+            }
+
+            .vn-login-another-way-text{
+                font-family: open sans;
+                font-size: 12px;
+                font-weight: 500;
+                color: #343434;
+            }
+
+        .vn-login-another-way-google{
+            margin-top: 15px;
+        }
+
+            .vn-login-another-way-google-button{
+                width: 346px;
+                height: 35px;
+                border: 2px solid #efefef;
+                color: #343434;
+                background: none;
+                border-radius: 5px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-weight: 500;
+                font-size: 12px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .vn-login-another-way-google-button:hover{
+                border: 2px solid #efefef;
+                background: #efefef;
+            }
+
+        .vn-login-another-way-facebook{
+            margin-top: 15px;
+        }
+
+            .vn-login-another-way-facebook-button{
+                width: 346px;
+                height: 35px;
+                border: 2px solid #efefef;
+                color: #343434;
+                background: none;
+                border-radius: 5px;
+                padding: 0 15px 0 15px;
+                font-family: open sans;
+                font-size: 12px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .vn-login-another-way-facebook-button:hover{
+                border: 2px solid #efefef;
+                background: #efefef;
+            }
+
+        .vn-login-register{
+            margin-top: 15px;
+        }
+
+            .vn-login-register-text{
+                font-family: open sans;
+                font-size: 13px;
+                font-weight: 500;
+                color: #343434;
+            }
+
+            .vn-login-register-text-link{
+                font-family: open sans;
+                font-size: 13px;
+                font-weight: 500;
+                color: #3d29f5;
+                text-decoration: none;
+            }
+
+            .vn-login-register-text-link:hover{
+                border-bottom: 2px solid #4548ff;
+            }
+
+        .vn-login-copyright{
+            display: block;
+            margin-top: 10px;
+        }
+
+            .vn-login-copyright-text{
+                font-family: open sans;
+                font-size: 11px;
+                font-weight: 500;
+                color: #343434;
+            }
+
+
+    .vn-login-page-right{
+        max-height: 600px;
+        width: 500px;
+        width: auto;
+        float: left;
+    }
+
+        .login-page-right-box{
+            width: 500px;
+            height: auto;
+            width: auto;
+            display: flex;
+          }
+          
+          .vn-login-page-right-image{
+            margin-right: 70px;
+            margin-left: 30px;
+            width: 400px;
+            justify-content: flex-start;
+            display: block;
+          }
+            
+          .vn-login-image{
+            display: block;
+            position: relative;
+            border: none;
+            margin: 20px 0;
+            width: 100%;
+            height: 500px;
+          }
+          
+          .vn-login-image img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+          }
+
+
+          .vn-login-image-background{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: none;
+            top: 0;
+            left: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.4);
+          }
+          
+          
+          .vn-login-image-text{
+            position: absolute;
+            z-index: 55;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+
+          .vn-login-image-text-a{
+              font-family: montserrat;
+              font-size: 45px;
+              font-weight: 700;
+              color: #fff;
+              opacity: 1;
+          }
+        
+        

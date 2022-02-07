@@ -402,8 +402,7 @@
 
         .vn-message-open-bottom{
             display: block;
-            position: absolute;
-            bottom: 0;
+            position: relative;
             margin: 0 20px 0 20px;
             background: #fff;
             z-index: 5;
@@ -411,6 +410,8 @@
 
             .vn-message-open-bottom-container{
                 display: flex;
+                position: absolute;
+                bottom: 0;
                 height: 40px;
                 padding: 10px 0 20px 0;
             }
